@@ -30,14 +30,14 @@
 //#include <PciListenerImp.h>
 
 // BLDC motor & driver instance
-BLDCMotor motor = BLDCMotor(11);
-BLDCDriver3PWM driver = BLDCDriver3PWM(9, 5, 6, 8);
+BLDCMotor motor = BLDCMotor(8);
+BLDCDriver3PWM driver = BLDCDriver3PWM(PE9, PE11, PE13, PB9);
 // Stepper motor & driver instance
 //StepperMotor motor = StepperMotor(50);
 //StepperDriver4PWM driver = StepperDriver4PWM(9, 5, 10, 6,  8);
 
 // encoder instance
-Encoder encoder = Encoder(2, 3, 1000);
+Encoder encoder = Encoder(PA0, PB3, 1000);
 
 // Interrupt routine intialisation
 // channel A and B callbacks
@@ -48,7 +48,7 @@ void doB(){encoder.handleB();}
 
 
 // velocity set point variable
-float target_velocity = 0;
+float target_velocity = 10;
 // instantiate the commander
 Commander command = Commander(Serial);
 void doTarget(char* cmd) { command.scalar(&target_velocity, cmd); }

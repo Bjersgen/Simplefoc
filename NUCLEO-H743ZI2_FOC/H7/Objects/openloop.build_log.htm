@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yjr 601059768@qq.com, fwfas, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\60105\Desktop\simplefoc\Simplefoc\NUCLEO-H743ZI2_FOC\H7\openloop.uvprojx
+Project File Date:  11/11/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'STM32H743'
+../2_openloop/Hardware/timer.c(2): error: 'stm32f10x.h' file not found
+#include "stm32f10x.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling timer.c...
+../2_openloop/Hardware/delay.c(2): warning: In file included from...
+../2_openloop/Hardware/delay.h(6): error: 'stm32f10x.h' file not found
+#include "stm32f10x.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling delay.c...
+../2_openloop/Hardware/usart.c(2): warning: In file included from...
+../2_openloop/Hardware/usart.h(6): error: 'stm32f10x.h' file not found
+#include "stm32f10x.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+compiling usart.c...
+user/stm32h7xx_it.c(36): error: unknown type name 'DMA_HandleTypeDef'
+extern DMA_HandleTypeDef DMA_Handle;
+       ^
+user/stm32h7xx_it.c(139): warning: implicit declaration of function 'HAL_IncTick' is invalid in C99 [-Wimplicit-function-declaration]
+  HAL_IncTick();
+  ^
+user/stm32h7xx_it.c(156): warning: implicit declaration of function 'HAL_DMA_IRQHandler' is invalid in C99 [-Wimplicit-function-declaration]
+  HAL_DMA_IRQHandler(&DMA_Handle);
+  ^
+user/stm32h7xx_it.c(154): warning: no previous prototype for function 'BDMA_Channel0_IRQHandler' [-Wmissing-prototypes]
+void BDMA_Channel0_IRQHandler(void)
+     ^
+user/stm32h7xx_it.c(154): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void BDMA_Channel0_IRQHandler(void)
+^
+static 
+user/stm32h7xx_it.c(166): warning: implicit declaration of function 'HAL_DMAEx_MUX_IRQHandler' is invalid in C99 [-Wimplicit-function-declaration]
+  HAL_DMAEx_MUX_IRQHandler(&DMA_Handle);
+  ^
+user/stm32h7xx_it.c(164): warning: no previous prototype for function 'DMAMUX2_OVR_IRQHandler' [-Wmissing-prototypes]
+void DMAMUX2_OVR_IRQHandler(void)
+     ^
+user/stm32h7xx_it.c(164): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMAMUX2_OVR_IRQHandler(void)
+^
+static 
+5 warnings and 1 error generated.
+compiling stm32h7xx_it.c...
+user/main.c(4): warning: In file included from...
+user/MyProject.h(9): error: 'usart.h' file not found
+#include "usart.h"
+         ^~~~~~~~~
+1 error generated.
+compiling main.c...
+assembling startup_stm32h743xx.s...
+SimpleFOC/foc_utils.c(2): warning: In file included from...
+SimpleFOC/MyProject.h(9): error: 'usart.h' file not found
+#include "usart.h"
+         ^~~~~~~~~
+1 error generated.
+compiling foc_utils.c...
+SimpleFOC/FOCMotor.c(2): warning: In file included from...
+SimpleFOC/MyProject.h(9): error: 'usart.h' file not found
+#include "usart.h"
+         ^~~~~~~~~
+1 error generated.
+compiling FOCMotor.c...
+SimpleFOC/BLDCMotor.c(2): warning: In file included from...
+SimpleFOC/MyProject.h(9): error: 'usart.h' file not found
+#include "usart.h"
+         ^~~~~~~~~
+1 error generated.
+compiling BLDCMotor.c...
+startup/system_stm32h7xx_dualcore_boot_cm4_cm7.c(254): error: Please #define CORE_CM4 or CORE_CM7
+#error Please #define CORE_CM4 or CORE_CM7
+ ^
+1 error generated.
+compiling system_stm32h7xx_dualcore_boot_cm4_cm7.c...
+compiling system_stm32h7xx.c...
+startup/system_stm32h7xx_dualcore_bootcm4_cm7gated.c(252): error: Please #define CORE_CM4 or CORE_CM7
+#error Please #define CORE_CM4 or CORE_CM7
+ ^
+1 error generated.
+compiling system_stm32h7xx_dualcore_bootcm4_cm7gated.c...
+startup/system_stm32h7xx_dualcore_bootcm7_cm4gated.c(250): error: Please #define CORE_CM4 or CORE_CM7
+#error Please #define CORE_CM4 or CORE_CM7
+ ^
+1 error generated.
+compiling system_stm32h7xx_dualcore_bootcm7_cm4gated.c...
+compiling system_stm32h7xx_singlecore.c...
+".\Objects\openloop.axf" - 11 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32H7xx_DFP.2.8.0.pack
+                Keil.STM32H7xx_DFP.2.8.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
