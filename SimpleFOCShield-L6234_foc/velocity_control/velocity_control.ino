@@ -31,13 +31,13 @@
 
 // BLDC motor & driver instance
 BLDCMotor motor = BLDCMotor(8);
-BLDCDriver3PWM driver = BLDCDriver3PWM(PE9, PE11, PE13, PB9);
+BLDCDriver3PWM driver = BLDCDriver3PWM(9, 5, 6, 8);
 // Stepper motor & driver instance
 //StepperMotor motor = StepperMotor(50);
 //StepperDriver4PWM driver = StepperDriver4PWM(9, 5, 10, 6,  8);
 
 // encoder instance
-Encoder encoder = Encoder(PA0, PB3, 1000);
+Encoder encoder = Encoder(2, 3, 1000);
 
 // Interrupt routine intialisation
 // channel A and B callbacks
