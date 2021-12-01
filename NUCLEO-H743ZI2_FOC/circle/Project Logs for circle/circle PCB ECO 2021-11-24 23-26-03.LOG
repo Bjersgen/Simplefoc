@@ -1,0 +1,215 @@
+Added Component: Designator=BAT1(BAT54s)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "512-BAT54S"; VariantName = "[No Variations]"
+Added Component: Designator=C1(C0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C2(C0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C3(C0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C4(C0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C8(R/C-0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C9(R/C-0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CAP1(EEH-ZA1E101XP)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "667-EEH-ZA1E101XP"; VariantName = "[No Variations]"
+Added Component: Designator=CBY1(C0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CL1(R/C-0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CN1(HDR_1x4_2R54_V_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "17-Jul-2002: Re-released for DXP Platform."; VariantName = "[No Variations]"
+Added Component: Designator=D1(D0805+)
+Add component. Clean all parameters for all variants
+Added Component: Designator=INA1(INA240)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "595-INA240A2PWR"; VariantName = "[No Variations]"
+Added Component: Designator=INA2(INA240)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "595-INA240A2PWR"; VariantName = "[No Variations]"
+Added Component: Designator=L1(L7805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=L6234(SOIC127P1420X360-21N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "497-5352-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.com/product-detail/en/stmicroelectronics/L6234PD013TR/497-5352-1-ND/1154483?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "L6234PD013TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SO-20 STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/L6234PD013TR/STMicroelectronics/view-part/75337/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(AXIAL0.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R8(AXIAL0.3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RCS(DIP-16)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SC10(solder_connection)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SCT1(solder_connection_tripple)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TB_PWR(TB002-500-02BE)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-TB002-500-02BE"; VariantName = "[No Variations]"
+Added Component: Designator=TBM1(TB002-500-03BE)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-TB002-500-03BE"; VariantName = "[No Variations]"
+Added Component: Designator=U1(LQFP144_0R5_SKT)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U4(SOIC 8)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+3.3 Pin=CN1-1
+Added Pin To Net: NetName=+3.3 Pin=SCT1-3
+Added Pin To Net: NetName=+3.3 Pin=U1-72
+Added Net: Name=+3.3
+Added Pin To Net: NetName=+5 Pin=C8-1
+Added Pin To Net: NetName=+5 Pin=R7-2
+Added Pin To Net: NetName=+5 Pin=R8-2
+Added Pin To Net: NetName=+5 Pin=SCT1-2
+Added Pin To Net: NetName=+5 Pin=U4-1
+Added Net: Name=+5
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=CAP1-2
+Added Pin To Net: NetName=GND Pin=CBY1-2
+Added Pin To Net: NetName=GND Pin=CL1-2
+Added Pin To Net: NetName=GND Pin=CN1-4
+Added Pin To Net: NetName=GND Pin=D1-K
+Added Pin To Net: NetName=GND Pin=INA1-1
+Added Pin To Net: NetName=GND Pin=INA1-4
+Added Pin To Net: NetName=GND Pin=INA1-7
+Added Pin To Net: NetName=GND Pin=INA2-1
+Added Pin To Net: NetName=GND Pin=INA2-4
+Added Pin To Net: NetName=GND Pin=INA2-7
+Added Pin To Net: NetName=GND Pin=L1-2
+Added Pin To Net: NetName=GND Pin=L6234-1
+Added Pin To Net: NetName=GND Pin=L6234-2
+Added Pin To Net: NetName=GND Pin=L6234-10
+Added Pin To Net: NetName=GND Pin=L6234-11
+Added Pin To Net: NetName=GND Pin=L6234-19
+Added Pin To Net: NetName=GND Pin=L6234-20
+Added Pin To Net: NetName=GND Pin=L6234-21
+Added Pin To Net: NetName=GND Pin=L6234-22
+Added Pin To Net: NetName=GND Pin=L6234-23
+Added Pin To Net: NetName=GND Pin=TB_PWR-1
+Added Pin To Net: NetName=GND Pin=U4-5
+Added Pin To Net: NetName=GND Pin=U4-8
+Added Net: Name=GND
+Added Pin To Net: NetName=NetBAT1_2 Pin=BAT1-2
+Added Pin To Net: NetName=NetBAT1_2 Pin=C4-2
+Added Pin To Net: NetName=NetBAT1_2 Pin=L6234-18
+Added Net: Name=NetBAT1_2
+Added Pin To Net: NetName=NetBAT1_3 Pin=BAT1-3
+Added Pin To Net: NetName=NetBAT1_3 Pin=C2-1
+Added Net: Name=NetBAT1_3
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=L6234-17
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=L6234-16
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Pin To Net: NetName=NetC9_1 Pin=U4-2
+Added Pin To Net: NetName=NetC9_1 Pin=U4-4
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetCBY1_1 Pin=CBY1-1
+Added Pin To Net: NetName=NetCBY1_1 Pin=INA1-5
+Added Pin To Net: NetName=NetCBY1_1 Pin=INA1-6
+Added Pin To Net: NetName=NetCBY1_1 Pin=INA2-5
+Added Pin To Net: NetName=NetCBY1_1 Pin=INA2-6
+Added Pin To Net: NetName=NetCBY1_1 Pin=SCT1-1
+Added Net: Name=NetCBY1_1
+Added Pin To Net: NetName=NetCL1_1 Pin=CL1-1
+Added Pin To Net: NetName=NetCL1_1 Pin=L1-3
+Added Net: Name=NetCL1_1
+Added Pin To Net: NetName=NetCN1_2 Pin=CN1-2
+Added Pin To Net: NetName=NetCN1_2 Pin=U1-109
+Added Net: Name=NetCN1_2
+Added Pin To Net: NetName=NetCN1_3 Pin=CN1-3
+Added Pin To Net: NetName=NetCN1_3 Pin=U1-105
+Added Net: Name=NetCN1_3
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetINA1_2 Pin=INA1-2
+Added Pin To Net: NetName=NetINA1_2 Pin=L6234-5
+Added Pin To Net: NetName=NetINA1_2 Pin=RCS-2
+Added Net: Name=NetINA1_2
+Added Pin To Net: NetName=NetINA1_3 Pin=INA1-3
+Added Pin To Net: NetName=NetINA1_3 Pin=RCS-15
+Added Pin To Net: NetName=NetINA1_3 Pin=TBM1-2
+Added Net: Name=NetINA1_3
+Added Pin To Net: NetName=NetINA1_8 Pin=INA1-8
+Added Pin To Net: NetName=NetINA1_8 Pin=U1-37
+Added Net: Name=NetINA1_8
+Added Pin To Net: NetName=NetINA2_2 Pin=INA2-2
+Added Pin To Net: NetName=NetINA2_2 Pin=RCS-16
+Added Pin To Net: NetName=NetINA2_2 Pin=TBM1-3
+Added Net: Name=NetINA2_2
+Added Pin To Net: NetName=NetINA2_3 Pin=INA2-3
+Added Pin To Net: NetName=NetINA2_3 Pin=L6234-6
+Added Pin To Net: NetName=NetINA2_3 Pin=RCS-1
+Added Net: Name=NetINA2_3
+Added Pin To Net: NetName=NetINA2_8 Pin=INA2-8
+Added Pin To Net: NetName=NetINA2_8 Pin=U1-29
+Added Net: Name=NetINA2_8
+Added Pin To Net: NetName=NetJP1_2 Pin=U1-40
+Added Net: Name=NetJP1_2
+Added Pin To Net: NetName=NetJP1_3 Pin=U1-123
+Added Net: Name=NetJP1_3
+Added Pin To Net: NetName=NetJP1_4 Pin=U1-42
+Added Net: Name=NetJP1_4
+Added Pin To Net: NetName=NetJP1_5 Pin=U1-41
+Added Net: Name=NetJP1_5
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=NetL1_1 Pin=SC10-2
+Added Net: Name=NetL1_1
+Added Pin To Net: NetName=NetL6234_3 Pin=L6234-3
+Added Pin To Net: NetName=NetL6234_3 Pin=L6234-8
+Added Pin To Net: NetName=NetL6234_3 Pin=L6234-13
+Added Pin To Net: NetName=NetL6234_3 Pin=U1-13
+Added Net: Name=NetL6234_3
+Added Pin To Net: NetName=NetL6234_4 Pin=L6234-4
+Added Pin To Net: NetName=NetL6234_4 Pin=U1-64
+Added Net: Name=NetL6234_4
+Added Pin To Net: NetName=NetL6234_7 Pin=L6234-7
+Added Pin To Net: NetName=NetL6234_7 Pin=U1-60
+Added Net: Name=NetL6234_7
+Added Pin To Net: NetName=NetL6234_14 Pin=L6234-14
+Added Pin To Net: NetName=NetL6234_14 Pin=U1-86
+Added Net: Name=NetL6234_14
+Added Pin To Net: NetName=NetL6234_15 Pin=L6234-15
+Added Pin To Net: NetName=NetL6234_15 Pin=TBM1-1
+Added Net: Name=NetL6234_15
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Pin To Net: NetName=NetR7_1 Pin=U1-139
+Added Pin To Net: NetName=NetR7_1 Pin=U4-7
+Added Net: Name=NetR7_1
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetR8_1 Pin=U1-140
+Added Pin To Net: NetName=NetR8_1 Pin=U4-6
+Added Net: Name=NetR8_1
+Added Pin To Net: NetName=NetS1_1 Pin=TB_PWR-2
+Added Net: Name=NetS1_1
+Added Pin To Net: NetName=VCC1 Pin=BAT1-1
+Added Pin To Net: NetName=VCC1 Pin=C1-1
+Added Pin To Net: NetName=VCC1 Pin=C4-1
+Added Pin To Net: NetName=VCC1 Pin=CAP1-1
+Added Pin To Net: NetName=VCC1 Pin=L6234-9
+Added Pin To Net: NetName=VCC1 Pin=L6234-12
+Added Pin To Net: NetName=VCC1 Pin=SC10-1
+Added Net: Name=VCC1
+Added Class: Name=circle
+Added Room: Name=circle

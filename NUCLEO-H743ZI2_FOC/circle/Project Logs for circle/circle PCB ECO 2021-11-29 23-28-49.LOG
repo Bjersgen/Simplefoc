@@ -1,0 +1,18 @@
+Added Component: Designator=U1(LQFP144_0R5_SKT)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetL6234_3 Pin=U1-13
+Added Pin To Net: NetName=NetINA2_8 Pin=U1-29
+Added Pin To Net: NetName=NetINA1_8 Pin=U1-37
+Added Pin To Net: NetName=NetJP1_2 Pin=U1-40
+Added Pin To Net: NetName=NetJP1_5 Pin=U1-41
+Added Pin To Net: NetName=NetJP1_4 Pin=U1-42
+Added Pin To Net: NetName=NetL6234_7 Pin=U1-60
+Added Pin To Net: NetName=NetL6234_4 Pin=U1-64
+Added Pin To Net: NetName=+3.3 Pin=U1-72
+Added Pin To Net: NetName=NetL6234_14 Pin=U1-86
+Added Pin To Net: NetName=NetCN1_3 Pin=U1-105
+Added Pin To Net: NetName=NetCN1_2 Pin=U1-109
+Added Pin To Net: NetName=NetJP1_3 Pin=U1-123
+Added Pin To Net: NetName=NetR7_1 Pin=U1-139
+Added Pin To Net: NetName=NetR8_1 Pin=U1-140
+Added Member To Class: ClassName=circle Member=Component U1 MCU_LQFP144

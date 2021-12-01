@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=AS5600 NewDesignator=U4
+Change Component Designator: OldDesignator=TBM1 NewDesignator=d
+Change Net Name : Old Net Name=NetINA1_3 New Net Name=Netd_2
+Change Net Name : Old Net Name=NetINA2_2 New Net Name=Netd_3
+Change Net Name : Old Net Name=NetL6234_15 New Net Name=Netd_1
+Added Room: Name=circle
