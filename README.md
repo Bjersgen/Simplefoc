@@ -75,8 +75,9 @@
 普通电调都只能控制电机转速，而FOC可以进行电流（力矩）、速度、位置三个闭环控制。
 
 
-![Image text]
-![](C:\Users\60105\Desktop\FOC全文档2021.11.23\7.png)
+![Image text](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/1.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/1.png)
+
 
 
 
