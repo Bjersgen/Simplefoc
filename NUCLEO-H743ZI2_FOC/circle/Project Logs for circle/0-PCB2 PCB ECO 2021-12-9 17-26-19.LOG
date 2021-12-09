@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=R1 Old Footprint=0603R New Footprint=0805
+Change Component Footprint: Designator=R6 Old Footprint=0603R New Footprint=R0805
+Change Component Footprint: Designator=R7 Old Footprint=0603R New Footprint=R/C-0805
+Change Component Footprint: Designator=R8 Old Footprint=0603R New Footprint=R/C-0805
+Change Component Footprint: Designator=C8 Old Footprint=R/C-0603 New Footprint=R/C-0805
+Change Component Footprint: Designator=C9 Old Footprint=R/C-0603 New Footprint=R/C-0805
+Change Component Footprint: Designator=R5 Old Footprint=R/C-0603 New Footprint=R/C-0805
+Added Member To Class: ClassName=circle Member=Component L6234 L6234PD013TR
