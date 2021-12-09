@@ -115,6 +115,7 @@
 $$
 iA+iB+iC = 0
 $$
+
 ![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/4.png)
 
 
@@ -125,7 +126,9 @@ $$
 
 其中VS对应上图的Supply，PH_B_CS对应B相的片选信号，C2_OUT即为放大后的电流采样结果
 
+
 ![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/5.png)
+
 
 - 采样电阻0.01 Ω
 - 背面需分别短接A0/A2至输出
