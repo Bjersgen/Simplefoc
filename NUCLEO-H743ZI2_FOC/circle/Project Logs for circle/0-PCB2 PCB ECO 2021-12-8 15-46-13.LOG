@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetJP1_2 Pin=U1-40
+Removed Pin From Net: NetName=NetJP1_5 Pin=U1-41
+Removed Pin From Net: NetName=NetJP1_4 Pin=U1-42
+Removed Pin From Net: NetName=NetJP1_3 Pin=U1-123
+Change Component Designator: OldDesignator=d NewDesignator=TB_M
+Added Pin To Net: NetName=NetJP1_2 Pin=U1-18
+Added Pin To Net: NetName=NetJP1_5 Pin=U1-19
+Added Pin To Net: NetName=NetJP1_4 Pin=U1-20
+Added Pin To Net: NetName=NetJP1_4 Pin=U1-21
+Change Net Name : Old Net Name=Netd_1 New Net Name=NetL6234_15
+Change Net Name : Old Net Name=Netd_2 New Net Name=NetINA1_3
+Change Net Name : Old Net Name=Netd_3 New Net Name=NetINA2_2
+Added Room: Name=circle

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetJP1_3 Pin=U1-18
+Removed Pin From Net: NetName=NetJP1_2 Pin=U1-19
+Removed Pin From Net: NetName=NetJP1_5 Pin=U1-20
+Removed Pin From Net: NetName=NetJP1_4 Pin=U1-21
+Added Pin To Net: NetName=NetJP1_2 Pin=U1-18
+Added Pin To Net: NetName=NetJP1_3 Pin=U1-19
+Added Pin To Net: NetName=NetJP1_4 Pin=U1-20
+Added Pin To Net: NetName=NetJP1_5 Pin=U1-21
+Added Room: Name=circle
