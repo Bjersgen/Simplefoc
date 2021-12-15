@@ -30,7 +30,7 @@
 
 ### 四、FOC代码及调试的注意事项
 
-
+### 五、AS5600调试与执行
 
 
 
@@ -221,3 +221,206 @@ Peak current:
 2021.11.23  22：48 小圆片原理图画完且无bug 
 
 2021.12.01  15：00第一版小圆片Over
+
+### 五、AS5600调试与执行
+
+time 5  初始值200，period:2000，作为定时器读取time1-4的编码器计数值
+
+time1-4 编码器(Encoder mode，占用TIM1-4全部)
+
+差分走线(A-, A；B-, B)
+
+
+
+
+
+AS5600 I2C编程时序图
+
+![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/17.gif)
+
+方案1：
+
+time 口用GPIO模拟I2C
+
+以time1 CH1、CH2为例
+
+```c
+###########I2C.c文件#############
+//AS5500的角度信息地址
+#define  RAW_Angle_Hi    0x0C
+#define  RAW_Angle_Lo    0x0D
+
+//从机地址
+#define  AS5600_Address  0x36
+//清零并设置PE9的GPIO为INPUT
+#define SDA_IN()  {GPIOE->CRH&=0xFFFF0FFF;GPIOE->CRH|=0x00008000;}
+//清零并设置PE11的GPIO为OUTPUT
+#define SDA_OUT() {GPIOE->CRH&=0xFFFF0FFF;GPIOE->CRH|=0x00003000;}
+//读取PE11即SDA引脚的点平状态
+#define READ_SDA  (GPIOE->IDR&(1<<11)) 
+//设置GPIO引脚的开关
+#define IIC_SCL_1  GPIO_SetBits(GPIOE,GPIO_Pin_9)
+#define IIC_SCL_0  GPIO_ResetBits(GPIOE,GPIO_Pin_9)
+#define IIC_SDA_1  GPIO_SetBits(GPIOE,GPIO_Pin_11)
+#define IIC_SDA_0  GPIO_ResetBits(GPIOE,GPIO_Pin_11)
+/***************************************************************************/
+void delay_s(u32 i);
+/***************************************************************************/
+void IIC_Start(void)
+{
+	IIC_SDA_1;
+	IIC_SCL_1;
+	delay_s(20);
+	IIC_SDA_0;
+	delay_s(20);
+	IIC_SCL_0;
+}
+/***************************************************************************/
+void IIC_Stop(void)
+{
+	IIC_SCL_0;
+	IIC_SDA_0;
+	delay_s(20);
+	IIC_SCL_1;
+	IIC_SDA_1;
+	delay_s(20);
+}
+/***************************************************************************/
+//1-fail,0-success
+u8 IIC_Wait_Ack(void)
+{
+	u8 ucErrTime=0;
+	
+	SDA_IN();
+	IIC_SDA_1;
+	IIC_SCL_1;
+	delay_s(10);
+	while(READ_SDA!=0)
+	{
+		if(++ucErrTime>250)
+			{
+				SDA_OUT();
+				IIC_Stop();
+				return 1;
+			}
+	}
+	SDA_OUT();
+	IIC_SCL_0;
+	return 0; 
+}
+/***************************************************************************/
+void IIC_Ack(void)
+{
+	IIC_SCL_0;
+	IIC_SDA_0;
+	delay_s(20);
+	IIC_SCL_1;
+	delay_s(20);
+	IIC_SCL_0;
+}
+/***************************************************************************/
+void IIC_NAck(void)
+{
+	IIC_SCL_0;
+	IIC_SDA_1;
+	delay_s(20);
+	IIC_SCL_1;
+	delay_s(20);
+	IIC_SCL_0;
+}
+/***************************************************************************/
+void IIC_Send_Byte(u8 txd)
+{
+	u32 i;
+	
+	IIC_SCL_0;
+	for(i=0;i<8;i++)
+	{
+		if((txd&0x80)!=0)IIC_SDA_1;
+		else
+			IIC_SDA_0;
+		txd<<=1;
+		delay_s(20);
+		IIC_SCL_1;
+		delay_s(20);
+		IIC_SCL_0;
+		delay_s(20);
+	}
+}
+/***************************************************************************/
+u8 IIC_Read_Byte(u8 ack)
+{
+	u8 i,rcv=0;
+	
+	SDA_IN();
+	for(i=0;i<8;i++)
+	{
+		IIC_SCL_0; 
+		delay_s(20);
+		IIC_SCL_1;
+		rcv<<=1;
+		if(READ_SDA!=0)rcv++;
+		delay_s(10);
+	}
+	SDA_OUT();
+	if(!ack)IIC_NAck();
+	else
+		IIC_Ack();
+	return rcv;
+}
+/***************************************************************************/
+u8 AS5600_ReadOneByte(u8 addr)
+{
+	u8 temp;		  	    																 
+	
+	IIC_Start();
+	IIC_Send_Byte(AS5600_Address<<1);
+	IIC_Wait_Ack();
+	IIC_Send_Byte(addr);
+	IIC_Wait_Ack();	    
+	IIC_Start();  	 	   
+	IIC_Send_Byte((AS5600_Address<<1)+1);
+	IIC_Wait_Ack();	 
+	temp=IIC_Read_Byte(0);		   
+	IIC_Stop();
+	
+	return temp;
+}
+/***************************************************************************/
+u16 AS5600_ReadRawAngleTwo(void)
+{
+	u8 dh,dl;		  	    																 
+	
+	IIC_Start();
+	IIC_Send_Byte(AS5600_Address<<1);
+	IIC_Wait_Ack();
+	IIC_Send_Byte(RAW_Angle_Hi);
+	IIC_Wait_Ack();
+	IIC_Start();
+	IIC_Send_Byte((AS5600_Address<<1)+1);
+	IIC_Wait_Ack();
+	dh=IIC_Read_Byte(1);   //1-ack for next byte
+	dl=IIC_Read_Byte(0);   //0-end trans
+	IIC_Stop();
+	
+	return ((dh<<8)+dl);
+}
+
+#########main.c中断执行函数######
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if (htim->Instance == htim5.Instance)
+	{
+        #ifdef ENCODER_4096_MAGA
+        Encode_count_Motor1 = AS5600_ReadRawAngleTwo()*0.08789
+        Encode_count_Motor2 = AS5600_ReadRawAngleTwo()*0.08789
+        Encode_count_Motor3 = AS5600_ReadRawAngleTwo()*0.08789
+        Encode_count_Motor4 = AS5600_ReadRawAngleTwo()*0.08789
+        #endif
+            
+    }
+}
+
+
+```
+
