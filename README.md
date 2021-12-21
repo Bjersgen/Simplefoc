@@ -236,7 +236,7 @@ time1-4 编码器(Encoder mode，占用TIM1-4全部)
 
 AS5600 I2C编程时序图
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/17.gif)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/17.png)
 
 方案1：
 
