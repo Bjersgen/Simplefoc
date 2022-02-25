@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=NetCBY1_1 Pin=SCT1-1
+Removed Member From Class: ClassName=circle Member=SCT1
+Change Component Footprint: Designator=R1 Old Footprint=0603R New Footprint=0805
+Change Component Footprint: Designator=R6 Old Footprint=0603R New Footprint=R0805
+Change Component Footprint: Designator=R7 Old Footprint=0603R New Footprint=R/C-0805
+Change Component Footprint: Designator=R8 Old Footprint=0603R New Footprint=R/C-0805
+Change Component Footprint: Designator=C8 Old Footprint=R/C-0603 New Footprint=R/C-0805
+Change Component Footprint: Designator=C9 Old Footprint=R/C-0603 New Footprint=R/C-0805
+Change Component Footprint: Designator=R5 Old Footprint=R/C-0603 New Footprint=R/C-0805
+Change Component Comment : Designator=C9 Old Comment=1¦ÌF New Comment=10¦ÌF
+Added Pin To Net: NetName=NetCBY1_1 Pin=C8-1
+Added Pin To Net: NetName=NetCBY1_1 Pin=C9-1
+Added Pin To Net: NetName=NetCBY1_1 Pin=CN1-1
+Added Pin To Net: NetName=NetCBY1_1 Pin=JP1-1
+Added Pin To Net: NetName=NetCBY1_1 Pin=R7-2
+Added Pin To Net: NetName=NetCBY1_1 Pin=R8-2
+Added Pin To Net: NetName=NetCBY1_1 Pin=U1-72
+Added Pin To Net: NetName=NetCBY1_1 Pin=U4-1
+Added Pin To Net: NetName=NetCBY1_1 Pin=U4-2
+Added Pin To Net: NetName=NetCBY1_1 Pin=U4-4
+Change Net Name : Old Net Name=NetCBY1_1 New Net Name=+3.3
+Added Room: Name=circle
