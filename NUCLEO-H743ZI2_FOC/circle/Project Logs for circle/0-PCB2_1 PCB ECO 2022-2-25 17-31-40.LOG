@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=C8 Old Footprint=R/C-0805 New Footprint=R/C-0603
+Change Component Footprint: Designator=C9 Old Footprint=R/C-0805 New Footprint=R/C-0603
+Added Room: Name=circle
