@@ -467,10 +467,14 @@ DocumentPath=Project Outputs for circle\Design Rule Check - 0-PCB2.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for circle\Design Rule Check - circle.html
+DocumentPath=Project Outputs for circle\Design Rule Check - 0-PCB2_1.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
+DocumentPath=Project Outputs for circle\Design Rule Check - circle.html
+DItemRevisionGUID=
+
+[GeneratedDocument4]
 DocumentPath=Project Outputs for circle\Design Rule Check - PCB1.html
 DItemRevisionGUID=
 
