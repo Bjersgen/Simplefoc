@@ -1,0 +1,111 @@
+{
+    "name": "MDK-ARM",
+    "target": "111",
+    "toolchain": "AC5",
+    "showRepathOnLog": true,
+    "threadNum": 14,
+    "rootDir": "c:\\Users\\60105\\Desktop\\simplefoc\\Simplefoc\\NUCLEO-H743ZI2_FOC\\code\\MDK-ARM",
+    "dumpPath": ".eide\\log",
+    "outDir": "build\\111",
+    "ram": 131072,
+    "rom": 2097152,
+    "incDirs": [
+        "..\\Inc",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Inc",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Inc\\Legacy",
+        "..\\Drivers\\CMSIS\\Device\\ST\\STM32H7xx\\Include",
+        "..\\Drivers\\CMSIS\\Include",
+        "..\\Src",
+        ".cmsis\\dsp_lib",
+        ".cmsis\\include",
+        "RTE\\_111",
+        ".eide\\deps"
+    ],
+    "libDirs": [],
+    "defines": [
+        "USE_HAL_DRIVER",
+        "STM32H743xx"
+    ],
+    "sourceList": [
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_adc.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_adc_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_cortex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_dma.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_dma_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_eth.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_eth_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_exti.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_flash.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_flash_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_gpio.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_hsem.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_i2c.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_i2c_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_mdma.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_pcd.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_pcd_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_pwr.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_pwr_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_rcc.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_rcc_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_tim.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_tim_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_uart.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_hal_uart_ex.c",
+        "..\\Drivers\\STM32H7xx_HAL_Driver\\Src\\stm32h7xx_ll_usb.c",
+        "..\\Src\\BLDCMotor.c",
+        "..\\Src\\CurrentSense.c",
+        "..\\Src\\FOCMotor.c",
+        "..\\Src\\InlineCurrentSense.c",
+        "..\\Src\\adc.c",
+        "..\\Src\\foc_utils.c",
+        "..\\Src\\lowpass_filter.c",
+        "..\\Src\\main.c",
+        "..\\Src\\pid.c",
+        "..\\Src\\stm32h7xx_hal_msp.c",
+        "..\\Src\\stm32h7xx_it.c",
+        "..\\Src\\system_stm32h7xx.c",
+        "..\\Src\\usart.c",
+        "US_digital_1000.c",
+        "startup_stm32h743xx.s"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1647704153324.329,
+    "options": {
+        "version": 4,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "use-microLIB": true,
+            "output-debug-info": "enable",
+            "microcontroller-cpu": "cortex-m7-dp",
+            "microcontroller-fpu": "cortex-m7-dp",
+            "microcontroller-float": "cortex-m7-dp",
+            "target": "cortex-m7-dp"
+        },
+        "c/cpp-compiler": {
+            "optimization": "level-0",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "output-format": "elf",
+            "link-scatter": [
+                "\"c:/Users/60105/Desktop/simplefoc/Simplefoc/NUCLEO-H743ZI2_FOC/code/MDK-ARM/build/111/MDK-ARM.sct\""
+            ]
+        }
+    },
+    "sha": {
+        "c/cpp-defines": "528a300ef94dc50209d9756fead8af2d",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "d751713988987e9331980363e24189ce",
+        "global": "cac9ebb7f9962eedc2224bd91a5b3174",
+        "c/cpp-compiler": "ba2a532b8125b44a1517cc8aee242b21",
+        "asm-compiler": "99914b932bd37a50b983c5e7c90ae93b",
+        "linker": "de6c111c4307cf7fdcde4508057ee3b1"
+    }
+}

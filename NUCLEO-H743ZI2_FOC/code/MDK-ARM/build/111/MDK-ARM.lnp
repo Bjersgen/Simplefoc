@@ -1,0 +1,44 @@
+--cpu Cortex-M7.fp.dp --library_type=microlib --scatter "c:/Users/60105/Desktop/simplefoc/Simplefoc/NUCLEO-H743ZI2_FOC/code/MDK-ARM/build/111/MDK-ARM.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list .\build\111\MDK-ARM.map
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_eth.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_eth_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.o
+.\build\111\__\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.o
+.\build\111\__\Src\BLDCMotor.o
+.\build\111\__\Src\CurrentSense.o
+.\build\111\__\Src\FOCMotor.o
+.\build\111\__\Src\InlineCurrentSense.o
+.\build\111\__\Src\adc.o
+.\build\111\__\Src\foc_utils.o
+.\build\111\__\Src\lowpass_filter.o
+.\build\111\__\Src\main.o
+.\build\111\__\Src\pid.o
+.\build\111\__\Src\stm32h7xx_hal_msp.o
+.\build\111\__\Src\stm32h7xx_it.o
+.\build\111\__\Src\system_stm32h7xx.o
+.\build\111\__\Src\usart.o
+.\build\111\US_digital_1000.o
+.\build\111\startup_stm32h743xx.o -o .\build\111\MDK-ARM.axf

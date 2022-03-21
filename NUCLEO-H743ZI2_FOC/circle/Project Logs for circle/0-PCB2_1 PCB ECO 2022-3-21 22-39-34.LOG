@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VCC1 Pin=CAP1-1
+Removed Pin From Net: NetName=GND Pin=CAP1-2
+Added Pin To Net: NetName=GND Pin=CAP1-1
+Added Pin To Net: NetName=VCC1 Pin=CAP1-2
+Added Member To Class: ClassName=circle Member=Component U1 MCU_LQFP144
+Added Room: Name=circle
