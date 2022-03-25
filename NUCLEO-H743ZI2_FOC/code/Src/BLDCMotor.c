@@ -294,7 +294,7 @@ void setPhaseVoltage(float Uq, float Ud, float angle_el)
 	
 	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1,Ta*1000);
 	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2,Tb*1000);
-	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_3,Tc*1000);
+	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4,Tc*1000);
 	
 }
 /******************************************************************************/

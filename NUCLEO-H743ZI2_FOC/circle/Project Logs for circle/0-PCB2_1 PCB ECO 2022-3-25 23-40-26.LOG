@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetCN1_3 Pin=U1-105
+Removed Pin From Net: NetName=NetCN1_2 Pin=U1-109
+Change Component Footprint: Designator=CN1 Old Footprint=HDR_1x4_2R54_V_M New Footprint=CONN-TH_PH2.0-4P
+Change Component Footprint: Designator=JP1 Old Footprint=HDR_1x6_2R54_V_M New Footprint=CONN-TH_6P-P2.00_HX20018-6A
+Added Pin To Net: NetName=NetCN1_2 Pin=U1-105
+Added Pin To Net: NetName=NetCN1_3 Pin=U1-109
+Added Room: Name=circle

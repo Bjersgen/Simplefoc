@@ -154,12 +154,12 @@ int main(void)
 	MX_ADC1_Init();
 	
   /* USER CODE BEGIN 2 */
-	InlineCurrentSense(0.001,20,ADC_CHANNEL_11,ADC_CHANNEL_12); 
-	InlineCurrentSense_Init();
-	HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
+	//InlineCurrentSense(0.001,20,ADC_CHANNEL_11,ADC_CHANNEL_12); 
+	//InlineCurrentSense_Init();
+	//HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_ALL);
   HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
 	HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
-  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_4);
   /* USER CODE END 2 */
   HAL_Delay(100);            //Wait for the system to stabilize
 	
@@ -168,11 +168,11 @@ int main(void)
 	velocity_limit=20;         //rad/s angleOpenloop() use it  
 	torque_controller=Type_voltage;  //Type_dc_current;//  Type_foc_current;  //
 	controller=Type_velocity_openloop;  //Type_torque;//Type_angle; //
-	target=0;
-	current_limit=0;           //
+	target=4;
+	current_limit=0.5;           //
 	
   Motor_init();
-	Motor_initFOC();
+	//Motor_initFOC();
 	PID_init();
   printf("Motor ready.\r\n");
   /* Infinite loop */
@@ -182,7 +182,7 @@ int main(void)
     /* USER CODE END WHILE */
     move(target);
 		loopFOC();
-		commander_run();
+		//commander_run();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -192,6 +192,7 @@ int main(void)
   * @brief System Clock Configuration
   * @retvalNone
   */
+
 void commander_run(void)
 {
 	
@@ -409,7 +410,7 @@ static void MX_TIM1_Init(void)
   htim1.Init.Period = 1000;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
-  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
   {
     Error_Handler();
@@ -485,16 +486,22 @@ static void MX_TIM4_Init(void)
 
   TIM_Encoder_InitTypeDef sConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
 
   /* USER CODE BEGIN TIM4_Init 1 */
 
   /* USER CODE END TIM4_Init 1 */
   htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 3;
-  htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim4.Init.Period = 999;
+  htim4.Init.Prescaler = 2-1;
+  htim4.Init.CounterMode = TIM_COUNTERMODE_CENTERALIGNED1;
+  htim4.Init.Period = 1000;
+	
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim4.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  if (HAL_TIM_PWM_Init(&htim4) != HAL_OK)
+  {
+    Error_Handler();
+  }
   sConfig.EncoderMode = TIM_ENCODERMODE_TI12;
   sConfig.IC1Polarity = TIM_ICPOLARITY_RISING;
   sConfig.IC1Selection = TIM_ICSELECTION_DIRECTTI;
@@ -514,9 +521,18 @@ static void MX_TIM4_Init(void)
   {
     Error_Handler();
   }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN TIM4_Init 2 */
 
   /* USER CODE END TIM4_Init 2 */
+  HAL_TIM_MspPostInit(&htim4);
 
 }
 void MX_TIM5_Init(void)
@@ -648,8 +664,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOG_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LD3_Pin|LD2_Pin|GPIO_PIN_9, GPIO_PIN_RESET);
-
+  HAL_GPIO_WritePin(GPIOB, LD3_Pin|LD2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_3, GPIO_PIN_RESET);
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(USB_PowerSwitchOn_GPIO_Port, USB_PowerSwitchOn_Pin, GPIO_PIN_RESET);
 
@@ -660,11 +676,17 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(USER_Btn_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD3_Pin LD2_Pin */
-  GPIO_InitStruct.Pin = LD3_Pin|LD2_Pin|GPIO_PIN_9;
+  GPIO_InitStruct.Pin = LD3_Pin|LD2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  GPIO_InitStruct.Pin = GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
   /*Configure GPIO pin : USB_PowerSwitchOn_Pin */
   GPIO_InitStruct.Pin = USB_PowerSwitchOn_Pin;
