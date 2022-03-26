@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=C10 Old Footprint=0402 New Footprint=0603C
+Added Member To Class: ClassName=circle Member=Component CN1 SWD
+Added Room: Name=circle

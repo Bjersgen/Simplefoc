@@ -168,7 +168,7 @@ int main(void)
 	velocity_limit=20;         //rad/s angleOpenloop() use it  
 	torque_controller=Type_voltage;  //Type_dc_current;//  Type_foc_current;  //
 	controller=Type_velocity_openloop;  //Type_torque;//Type_angle; //
-	target=4;
+	target=2;
 	current_limit=0.5;           //
 	
   Motor_init();
