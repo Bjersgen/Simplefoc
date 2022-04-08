@@ -2,7 +2,7 @@
 #ifndef STM32_SPI2_H
 #define STM32_SPI2_H
 
-#include "stm32f10x.h"
+#include "stm32h7xx_it.h" 
 
 /******************************************************************************/
 void SPI2_Init_(void);

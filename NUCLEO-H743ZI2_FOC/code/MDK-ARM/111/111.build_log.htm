@@ -22,16 +22,172 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 C:\Users\60105\Desktop\simplefoc\Simplefoc\NUCLEO-H743ZI2_FOC\code\MDK-ARM\111.uvprojx
-Project File Date:  11/21/2021
+Project File Date:  04/08/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Build target '111'
+Rebuild target '111'
+assembling startup_stm32h743xx.s...
+compiling stm32h7xx_hal_uart_ex.c...
+compiling stm32h7xx_it.c...
+compiling stm32h7xx_hal_msp.c...
+compiling stm32h7xx_hal_tim_ex.c...
+compiling stm32h7xx_hal_pcd.c...
+compiling stm32h7xx_hal_cortex.c...
+compiling stm32h7xx_hal_eth_ex.c...
 compiling main.c...
+compiling stm32h7xx_hal_uart.c...
+compiling stm32h7xx_hal_eth.c...
+compiling stm32h7xx_hal_tim.c...
+compiling stm32h7xx_hal_pcd_ex.c...
+compiling stm32h7xx_hal_hsem.c...
+compiling stm32h7xx_hal_gpio.c...
+compiling stm32h7xx_hal_flash.c...
+compiling stm32h7xx_hal_mdma.c...
+compiling stm32h7xx_ll_usb.c...
+compiling stm32h7xx_hal_flash_ex.c...
+compiling stm32h7xx_hal_dma_ex.c...
+compiling stm32h7xx_hal_rcc_ex.c...
+compiling stm32h7xx_hal_rcc.c...
+compiling stm32h7xx_hal_dma.c...
+compiling stm32h7xx_hal_pwr.c...
+compiling stm32h7xx_hal_i2c_ex.c...
+compiling stm32h7xx_hal_exti.c...
+compiling BLDCMotor.c...
+..\Src\BLDCMotor.c(87): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if((mid_angle == end_angle)||(moved < 0.01))  //?????????
+..\Src\BLDCMotor.c(106): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if( fabs(moved*pole_pairs - _2PI) > 0.5 )  // 0.5 is arbitrary number it can be lower or higher!
+..\Src\BLDCMotor.c(109): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pole_pairs=_2PI/moved+0.5;     //??????,????
+..\Src\BLDCMotor.c(246): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		angle_el = _normalizeAngle(angle_el + _PI_2);
+..\Src\BLDCMotor.c(248): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(Uout> 0.577)Uout= 0.577;
+..\Src\BLDCMotor.c(251): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	sector = (angle_el / _PI_3) + 1;
+..\Src\BLDCMotor.c(252): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	T1 = _SQRT3*_sin(sector*_PI_3 - angle_el) * Uout;
+..\Src\BLDCMotor.c(253): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	T2 = _SQRT3*_sin(angle_el - (sector-1.0)*_PI_3) * Uout;
+..\Src\BLDCMotor.c(307): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(now_us<open_loop_timestamp)Ts = (float)(open_loop_timestamp - now_us)/9*1e-6;
+..\Src\BLDCMotor.c(309): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		Ts = (float)(0xFFFFFF - now_us + open_loop_timestamp)/9*1e-6;
+..\Src\BLDCMotor.c(312): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    if(Ts == 0 || Ts > 0.5) Ts = 1e-3; 
+..\Src\BLDCMotor.c(330): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(now_us<open_loop_timestamp)Ts = (float)(open_loop_timestamp - now_us)/9*1e-6;
+..\Src\BLDCMotor.c(332): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		Ts = (float)(0xFFFFFF - now_us + open_loop_timestamp)/9*1e-6;
+..\Src\BLDCMotor.c(335): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    if(Ts == 0 || Ts > 0.5) Ts = 1e-3; 
+..\Src\BLDCMotor.c: 14 warnings, 0 errors
+compiling stm32h7xx_hal.c...
+compiling system_stm32h7xx.c...
+compiling stm32h7xx_hal_pwr_ex.c...
+compiling stm32h7xx_hal_adc_ex.c...
+compiling stm32h7xx_hal_i2c.c...
+compiling stm32h7xx_hal_adc.c...
+compiling foc_utils.c...
+..\Src\foc_utils.c(18): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    if(a < _PI_2){
+..\Src\foc_utils.c(21): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return 0.0001f*sine_array[_round(126.6873f* a)];      // int array optimized
+..\Src\foc_utils.c(21): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return 0.0001f*sine_array[_round(126.6873f* a)];      // int array optimized
+..\Src\foc_utils.c(22): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    }else if(a < _PI){
+..\Src\foc_utils.c(25): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return 0.0001*sine_array[398 - _round(126.6873*a)];     // int array optimized
+..\Src\foc_utils.c(25): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return 0.0001*sine_array[398 - _round(126.6873*a)];     // int array optimized
+..\Src\foc_utils.c(25): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return 0.0001*sine_array[398 - _round(126.6873*a)];     // int array optimized
+..\Src\foc_utils.c(26): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    }else if(a < _3PI_2){
+..\Src\foc_utils.c(29): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return -0.0001*sine_array[-398 + _round(126.6873*a)];      // int array optimized
+..\Src\foc_utils.c(29): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return -0.0001*sine_array[-398 + _round(126.6873*a)];      // int array optimized
+..\Src\foc_utils.c(29): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return -0.0001*sine_array[-398 + _round(126.6873*a)];      // int array optimized
+..\Src\foc_utils.c(33): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return -0.0001*sine_array[796 - _round(126.6873*a)];      // int array optimized
+..\Src\foc_utils.c(33): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return -0.0001*sine_array[796 - _round(126.6873*a)];      // int array optimized
+..\Src\foc_utils.c(33): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return -0.0001*sine_array[796 - _round(126.6873*a)];      // int array optimized
+..\Src\foc_utils.c(43): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    float a_sin = a + _PI_2;
+..\Src\foc_utils.c(44): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    a_sin = a_sin > _2PI ? a_sin - _2PI : a_sin;
+..\Src\foc_utils.c(44): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    a_sin = a_sin > _2PI ? a_sin - _2PI : a_sin;
+..\Src\foc_utils.c(51): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    return a >= 0 ? a : (a + _2PI);
+..\Src\foc_utils.c: 18 warnings, 0 errors
+compiling FOCMotor.c...
+compiling usart.c...
+compiling lowpass_filter.c...
+..\Src\lowpass_filter.c(36): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float y = 0.9*y_vel_prev + 0.1*x;
+..\Src\lowpass_filter.c(36): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float y = 0.9*y_vel_prev + 0.1*x;
+..\Src\lowpass_filter.c(45): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float y = 0.9*y_current_q_prev + 0.1*x;
+..\Src\lowpass_filter.c(45): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float y = 0.9*y_current_q_prev + 0.1*x;
+..\Src\lowpass_filter.c(54): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float y = 0.9*y_current_d_prev + 0.1*x;
+..\Src\lowpass_filter.c(54): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float y = 0.9*y_current_d_prev + 0.1*x;
+..\Src\lowpass_filter.c: 6 warnings, 0 errors
+compiling adc.c...
+..\Src\adc.c(26): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    return (float)raw_adc*3.3/4096;
+..\Src\adc.c: 1 warning, 0 errors
+compiling InlineCurrentSense.c...
+compiling MagneticSensor.c...
+..\Src\MagneticSensor.c(100): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	return  (full_rotation_offset + ( angle_data / (float)cpr) * _2PI) ;
+..\Src\MagneticSensor.c(111): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(now_us<velocity_calc_timestamp)Ts = (float)(velocity_calc_timestamp - now_us)/9*1e-6;
+..\Src\MagneticSensor.c(113): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		Ts = (float)(0xFFFFFF - now_us + velocity_calc_timestamp)/9*1e-6;
+..\Src\MagneticSensor.c(115): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(Ts == 0 || Ts > 0.5) Ts = 1e-3;
+..\Src\MagneticSensor.c: 4 warnings, 0 errors
+compiling CurrentSense.c...
+..\Src\CurrentSense.c(20): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	i_beta = _1_SQRT3 * current.a + _2_SQRT3 * current.b;
+..\Src\CurrentSense.c(20): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	i_beta = _1_SQRT3 * current.a + _2_SQRT3 * current.b;
+..\Src\CurrentSense.c(46): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	i_beta = _1_SQRT3 * current.a + _2_SQRT3 * current.b;
+..\Src\CurrentSense.c(46): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	i_beta = _1_SQRT3 * current.a + _2_SQRT3 * current.b;
+..\Src\CurrentSense.c: 4 warnings, 0 errors
+compiling pid.c...
+..\Src\pid.c(55): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(Ts == 0 || Ts > 0.5) Ts = 1e-3f;
+..\Src\pid.c(64): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	integral = integral_vel_prev + pid_vel_I*Ts*0.5*(error + error_vel_prev);
+..\Src\pid.c(99): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(Ts == 0 || Ts > 0.5) Ts = 1e-3f;
+..\Src\pid.c(137): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(Ts == 0 || Ts > 0.5) Ts = 1e-3f;
+..\Src\pid.c(146): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	integral = integral_cur_q_prev + pid_cur_I*Ts*0.5*(error + error_cur_q_prev);
+..\Src\pid.c(181): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(Ts == 0 || Ts > 0.5) Ts = 1e-3f;
+..\Src\pid.c(190): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	integral = integral_cur_d_prev + pid_cur_I*Ts*0.5*(error + error_cur_d_prev);
+..\Src\pid.c: 7 warnings, 0 errors
 linking...
-Program Size: Code=29576 RO-data=1696 RW-data=252 ZI-data=8996  
+Program Size: Code=31264 RO-data=1696 RW-data=264 ZI-data=9072  
 FromELF: creating hex file...
-"111\111.axf" - 0 Error(s), 0 Warning(s).
+"111\111.axf" - 0 Error(s), 54 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,7 +210,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.5.0
-Build Time Elapsed:  00:00:06
+Build Time Elapsed:  00:02:51
 </pre>
 </body>
 </html>

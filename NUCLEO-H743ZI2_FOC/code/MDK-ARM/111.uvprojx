@@ -599,9 +599,9 @@
               <FilePath>..\Src\InlineCurrentSense.c</FilePath>
             </File>
             <File>
-              <FileName>US_digital_1000.c</FileName>
+              <FileName>MagneticSensor.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\US_digital_1000.c</FilePath>
+              <FilePath>..\Src\MagneticSensor.c</FilePath>
             </File>
           </Files>
         </Group>

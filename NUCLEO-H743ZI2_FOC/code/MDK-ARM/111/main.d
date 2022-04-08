@@ -49,9 +49,9 @@
 111\main.o: ../Inc/stm32h7xx_it.h
 111\main.o: ../Inc/usart.h
 111\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+111\main.o: ../Inc/usart.h
 111\main.o: ../Inc/delay.h
 111\main.o: ../Inc/adc.h
-111\main.o: ../Inc/US_digital_1000.h
 111\main.o: ../Inc/foc_utils.h
 111\main.o: ../Inc/FOCMotor.h
 111\main.o: ../Inc/BLDCmotor.h
@@ -59,4 +59,5 @@
 111\main.o: ../Inc/InlineCurrentSense.h
 111\main.o: ../Inc/CurrentSense.h
 111\main.o: ../Inc/lowpass_filter.h
+111\main.o: ../Inc/MagneticSensor.h
 111\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

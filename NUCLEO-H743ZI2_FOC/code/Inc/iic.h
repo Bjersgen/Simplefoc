@@ -2,7 +2,7 @@
 #ifndef STM32_IIC_H
 #define STM32_IIC_H
 
-#include "stm32f10x.h"
+#include "stm32h7xx_it.h" 
 
 /******************************************************************************/
 void I2C_Init_(void);

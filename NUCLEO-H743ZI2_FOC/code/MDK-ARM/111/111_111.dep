@@ -1,7 +1,7 @@
 Dependencies for Project '111', Target '111': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (startup_stm32h743xx.s)(0x6193BD6F)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32H743xx SETA 1" --pd "_RTE_ SETA 1"--list ..\..\..\documents\startup_stm32h743xx.lst --xref -o 111\startup_stm32h743xx.o --depend 111\startup_stm32h743xx.d)
-F (../Src/main.c)(0x623E8211)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\main.o --omf_browse 111\main.crf --depend 111\main.d)
+F (../Src/main.c)(0x624FB8DD)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\main.o --omf_browse 111\main.crf --depend 111\main.d)
 I (../Inc/main.h)(0x6194E271)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x5ED10525)
 I (../Inc/stm32h7xx_hal_conf.h)(0x61990DCB)
@@ -47,13 +47,12 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h)(0x5ED10525)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h)(0x5ED10525)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (../Inc/Myproject.h)(0x623C96A3)
+I (../Inc/Myproject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -61,6 +60,7 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 F (../Src/stm32h7xx_it.c)(0x618E88C4)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\stm32h7xx_it.o --omf_browse 111\stm32h7xx_it.crf --depend 111\stm32h7xx_it.d)
 I (../Inc/main.h)(0x6194E271)
@@ -1387,7 +1387,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h)(0x5ED10525)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h)(0x5ED10525)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 F (..\Src\BLDCMotor.c)(0x623C84CC)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\bldcmotor.o --omf_browse 111\bldcmotor.crf --depend 111\bldcmotor.d)
-I (../Inc/MyProject.h)(0x623C96A3)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
@@ -1437,7 +1437,6 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1445,6 +1444,7 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 F (..\Src\foc_utils.c)(0x6198BC13)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\foc_utils.o --omf_browse 111\foc_utils.crf --depend 111\foc_utils.d)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x5ED10525)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h)(0x5ED10525)
@@ -1489,14 +1489,13 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x5ED10525)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h)(0x5ED10525)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h)(0x5ED10525)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
-I (../Inc/MyProject.h)(0x623C96A3)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1504,8 +1503,9 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 F (..\Src\FOCMotor.c)(0x6199F995)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\focmotor.o --omf_browse 111\focmotor.crf --depend 111\focmotor.d)
-I (../Inc/MyProject.h)(0x623C96A3)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
@@ -1555,7 +1555,6 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1563,8 +1562,9 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 F (..\Src\lowpass_filter.c)(0x612B9221)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\lowpass_filter.o --omf_browse 111\lowpass_filter.crf --depend 111\lowpass_filter.d)
-I (../Inc/MyProject.h)(0x623C96A3)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
@@ -1614,7 +1614,6 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1622,8 +1621,9 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 F (..\Src\pid.c)(0x6199F73C)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\pid.o --omf_browse 111\pid.crf --depend 111\pid.d)
-I (../Inc/MyProject.h)(0x623C96A3)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
@@ -1673,7 +1673,6 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1681,8 +1680,9 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 F (..\Src\CurrentSense.c)(0x6198D301)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\currentsense.o --omf_browse 111\currentsense.crf --depend 111\currentsense.d)
-I (../Inc/MyProject.h)(0x623C96A3)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
@@ -1732,7 +1732,6 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1740,8 +1739,9 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 F (..\Src\InlineCurrentSense.c)(0x619910DD)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\inlinecurrentsense.o --omf_browse 111\inlinecurrentsense.crf --depend 111\inlinecurrentsense.d)
-I (../Inc/MyProject.h)(0x623C96A3)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
@@ -1791,7 +1791,6 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1799,8 +1798,9 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
-F (.\US_digital_1000.c)(0x621A2BC1)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\us_digital_1000.o --omf_browse 111\us_digital_1000.crf --depend 111\us_digital_1000.d)
-I (../Inc/Myproject.h)(0x623C96A3)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
+F (..\Src\MagneticSensor.c)(0x624FD845)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\magneticsensor.o --omf_browse 111\magneticsensor.crf --depend 111\magneticsensor.d)
+I (../Inc/MyProject.h)(0x624FD1B3)
 I (../Inc/stm32h7xx_it.h)(0x618E88C4)
 I (../Inc/usart.h)(0x6194E271)
 I (../Inc/main.h)(0x6194E271)
@@ -1850,7 +1850,6 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h)(0x5ED10525)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (../Inc/delay.h)(0x618D2192)
 I (../Inc/adc.h)(0x6199107A)
-I (../Inc/US_digital_1000.h)(0x619A1039)
 I (../Inc/foc_utils.h)(0x612B9221)
 I (../Inc/FOCMotor.h)(0x6133285C)
 I (../Inc/BLDCmotor.h)(0x612B9221)
@@ -1858,6 +1857,7 @@ I (../Inc/pid.h)(0x612B9224)
 I (../Inc/InlineCurrentSense.h)(0x612B9221)
 I (../Inc/CurrentSense.h)(0x612B9221)
 I (../Inc/lowpass_filter.h)(0x612B9221)
+I (../Inc/MagneticSensor.h)(0x614D7A5A)
 F (..\Src\adc.c)(0x6199F73C)(--c99 -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src-I.\RTE\_111-IC:\Users\60105\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\60105\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o 111\adc.o --omf_browse 111\adc.crf --depend 111\adc.d)
 I (../Inc/adc.h)(0x6199107A)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x5ED10525)

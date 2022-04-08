@@ -48,9 +48,9 @@
 111\focmotor.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h
 111\focmotor.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h
 111\focmotor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+111\focmotor.o: ../Inc/usart.h
 111\focmotor.o: ../Inc/delay.h
 111\focmotor.o: ../Inc/adc.h
-111\focmotor.o: ../Inc/US_digital_1000.h
 111\focmotor.o: ../Inc/foc_utils.h
 111\focmotor.o: ../Inc/FOCMotor.h
 111\focmotor.o: ../Inc/BLDCmotor.h
@@ -58,3 +58,4 @@
 111\focmotor.o: ../Inc/InlineCurrentSense.h
 111\focmotor.o: ../Inc/CurrentSense.h
 111\focmotor.o: ../Inc/lowpass_filter.h
+111\focmotor.o: ../Inc/MagneticSensor.h

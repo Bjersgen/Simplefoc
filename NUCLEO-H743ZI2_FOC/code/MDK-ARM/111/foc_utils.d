@@ -48,9 +48,9 @@
 111\foc_utils.o: ../Inc/usart.h
 111\foc_utils.o: ../Inc/main.h
 111\foc_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+111\foc_utils.o: ../Inc/usart.h
 111\foc_utils.o: ../Inc/delay.h
 111\foc_utils.o: ../Inc/adc.h
-111\foc_utils.o: ../Inc/US_digital_1000.h
 111\foc_utils.o: ../Inc/foc_utils.h
 111\foc_utils.o: ../Inc/FOCMotor.h
 111\foc_utils.o: ../Inc/BLDCmotor.h
@@ -58,3 +58,4 @@
 111\foc_utils.o: ../Inc/InlineCurrentSense.h
 111\foc_utils.o: ../Inc/CurrentSense.h
 111\foc_utils.o: ../Inc/lowpass_filter.h
+111\foc_utils.o: ../Inc/MagneticSensor.h

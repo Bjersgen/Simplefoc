@@ -38,7 +38,7 @@
 "111\pid.o"
 "111\currentsense.o"
 "111\inlinecurrentsense.o"
-"111\us_digital_1000.o"
+"111\magneticsensor.o"
 "111\adc.o"
 "111\usart.o"
 --library_type=microlib --strict --scatter "111\111.sct"
