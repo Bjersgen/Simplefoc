@@ -164,15 +164,17 @@ int main(void)
 	HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_4);
   /* USER CODE END 2 */
-  HAL_Delay(100);            //Wait for the system to stabilize
+  HAL_Delay(1000);            //Wait for the system to stabilize
+	
+	MagneticSensor_Init();
 	
 	voltage_power_supply=16.8;   //V
-	voltage_limit=8;           //
+	voltage_limit=16.8;           //
 	velocity_limit=20;         //rad/s angleOpenloop() use it  
 	torque_controller=Type_voltage;  //Type_dc_current;//  Type_foc_current;  //
 	controller=Type_velocity_openloop;  //Type_torque;//Type_angle; //
 	target=2;
-	current_limit=0.5;           //
+	current_limit=0.8;           //
 	
   Motor_init();
 	//Motor_initFOC();
