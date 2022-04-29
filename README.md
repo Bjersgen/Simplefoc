@@ -7,8 +7,8 @@
 # FOC全文档2021.12.15
 成品：
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/18.png)
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/19.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/18.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/19.png)
 
 ## 目录
 
@@ -80,7 +80,7 @@
 
 
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/7.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/7.png)
 
 
 
@@ -91,7 +91,7 @@
 
 ##### 1）低侧电流采样
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/1.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/1.png)
 
      低侧电流检测可能是最常见的电流检测技术，主要是因为它既不需要高性能的PWM抑制运放，也不需要支持高压的运放，采样电阻在低侧MOS和GND之间，确保了运放输入端的电压非常低，**所以这种方法对运放没有什么要求**。这种方法的缺点是，必须在下桥臂MOS打开时检测电流，PWM频率通常为20k～50khz，这意味着低侧MOS的开关频率为每秒20k～50k次，因此PWM设置与ADC采集之间的同步非常重要。
 
@@ -99,7 +99,7 @@
 
 ##### 2）高侧电流采样
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/2.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/2.png)
 
 ​    高侧电流检测可能是最不常见的电流检测技术，因为它需要支持高压的运放，采样电阻在高侧MOS和直流电源电压之间，使放大器的输入端始终有高电压。 这种方法的另一个缺点和低侧电流采样一样，需要同步PWM和ADC。**优点：可以检测区分负载是否短路，无地电平干扰**。
 
@@ -107,7 +107,7 @@
 
 ##### 3）内置电流采样
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/3.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/3.png)
 
 ​        内置电流检测（InlineCurrentSense）是使用起来最简单但是最精准的技术。 采样电阻串联在电机相线上，检测的电流始终都是电机相电流，因为电感中的电流不会突变，所以无论PWM占空比的状态如何，采样到的电流都是连续稳定的。**内置电流检测的缺点主要在于芯片，需要比常规放大器更好的PWM抑制功能的高精度双向运放，简单的说就是硬件成本高。**
 
@@ -118,7 +118,7 @@
 经考虑，选择INA240，INA240分为四个型号，主要区别在于集成运放的放大倍数（INA240A1-20V/V，**INA240A2-50V/V**，INA240A3-100V/V,INA240A4-200V/V），下图为电流采样原理图，其中为了使负半轴期的电流信号能被采样到，增加了REF1和REF2两个电阻，为集成运放的正脚提供一个偏置电压V，使其不直接接地，左边的MOS管阵列负责选相，在时序中按顺序读出电流，在程序中只读出了两相，第三项通过基尔霍夫定律iA+iB+iC = 0
 
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/4.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/4.png)
 
 
 
@@ -129,7 +129,7 @@
 其中VS对应上图的Supply，PH_B_CS对应B相的片选信号，C2_OUT即为放大后的电流采样结果
 
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/5.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/5.png)
 
 
 - 采样电阻0.01 Ω
@@ -144,7 +144,7 @@
 
 ##### 1）DRV8305
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/6.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/6.png)
 
 
 
@@ -162,11 +162,11 @@ Peak current:
 
 ##### 3）L6234D
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/8.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/8.png)
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/9.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/9.png)
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/10.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/10.png)
 
 **Peak current : 5A**
 
@@ -174,23 +174,23 @@ Peak current:
 
 ##### 安装：
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/13.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/13.png)
 
 ​        AS5600是一种易于编程的具有12位高分辨率模拟或PWM输出 的磁性旋转位置传感器。这个非接触式模块可以检测出磁铁 径向磁轴转动的绝对角度。AS5600是为非接触式电位计应用 而设计的，其稳健的设计消除了外部杂散磁场的影响.。 工业标准的I²C 接口支持用户对非易失性参数进行简单的编程 而不需要专门的程序员来进行。 默认情况下可以输出0到360度的变化范围. 它同样可以通过编 程设定0度（开始位置）和最大角度（终止位置）来定义一个 较小的输出范围。 AS5600配备了智能低功耗功能，以自动降低功耗 。 输入引脚 (DIR) 根据旋转方向选择输出极性。如果DIR 接地， 那么输出值将随顺时针旋转而增加. 如果DIR接至VDD, 那么输 出值将随着逆时针旋转而增加。
 
 ##### AS5600霍尔元件位置：
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/14.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/14.png)
 
 ##### AS5600安装允许位移：
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/15.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/15.png)
 
 
 
 ##### AS5600 IIC通信连接方式：
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/16.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/16.png)
 
 
 
@@ -200,7 +200,7 @@ Peak current:
 
 #### 3.2 Arduino(MCU)----Drv8305(driver)
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/12.gif)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/12.gif)
 
 
 
@@ -240,7 +240,7 @@ time1-4 编码器(Encoder mode，占用TIM1-4全部)
 
 AS5600 I2C编程时序图
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/NUCLEO-H743ZI2_FOC/image/17.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/17.png)
 
 方案1：
 
