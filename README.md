@@ -1,4 +1,22 @@
 # Simplefoc
+       SimpleFOC——
+                        | ——BLDCmotor(self made DIY motor)
+                        | ——Ctrl-FOC-Lite(a copy for zhihui)
+                        | ——Documents
+                        | ——esp32-L6234_foc
+                        | ——SimpleFOCShield-L6234_foc
+                        | ——STM32H7_FOC
+                        	|——circle(PCBs & libraries)
+                        		|——Shell(a PCB shell)
+                                |——code(using Keil5 & STM32CubeMX)
+                        		|——Inc
+                        		|——Src
+                        		|——Drivers
+                        		|——MDK-ARM
+                                |——datasheet(ICs datasheets)
+                                |——image
+                                |——readme
+                        | ——readme
 
 针对不同开发板实现的FOC算法，开发过程中需要注意datasheet的阅读
 
