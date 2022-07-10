@@ -1,4 +1,6 @@
 # Simplefoc
+Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
+
        SimpleFOC——
                         | ——BLDCmotor(self made DIY motor)
                         | ——Ctrl-FOC-Lite(a copy for zhihui)
@@ -21,12 +23,11 @@
                         | ——readme
                         
 
-针对不同开发板实现的FOC算法，开发过程中需要注意datasheet的阅读
 
-大部分工程都是基于Arduino，有一个工程是基于STM32H743的。
+Most projects are based on Arduino, and one project is based on stm32h743.
 
-# FOC全文档2021.12.15
-成品：
+# FOC document 2021.12.15
+Product：
 
 ![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/18.png)
 ![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/19.png)
