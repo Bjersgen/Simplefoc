@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "epsp32miniV2(1)"
+		},
+		{
+			"name": "test",
+			"path": "..\\Documents\\PlatformIO\\Projects\\test"
+		}
+	],
+	"settings": {}
+}

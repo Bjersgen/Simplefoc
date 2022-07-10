@@ -1,0 +1,2 @@
+如果是从库管理器中直接下载的SimpleFOC库需要对文件/.pio/libdeps/src/drivers/hardware_specific/esp32_mcu.cpp进行替换
+文件放在该目录下，文件名为esp32_mcu.cpp

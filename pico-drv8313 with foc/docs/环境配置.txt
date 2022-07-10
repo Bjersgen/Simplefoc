@@ -1,0 +1,7 @@
+原平台为vscode的platformIO，该代码也可以在ArduinoIDE上编译，需要做的是将main.cpp的第一行去掉即可
+
+platform = espressif32
+board = pico32
+framework = arduino
+lib_deps = askuric/Simple FOC@2.1
+串口通信波特率 = 115200

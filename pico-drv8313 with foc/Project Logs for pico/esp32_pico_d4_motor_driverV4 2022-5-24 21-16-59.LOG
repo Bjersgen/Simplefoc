@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=VDD3V3 Pin=CBY1-1
+Added Pin To Net: NetName=VDD3V3 Pin=INA1-5
+Added Pin To Net: NetName=VDD3V3 Pin=INA1-6
+Added Pin To Net: NetName=VDD3V3 Pin=INA2-5
+Added Pin To Net: NetName=VDD3V3 Pin=INA2-6

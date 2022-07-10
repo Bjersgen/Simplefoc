@@ -1,0 +1,56 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\60105\Desktop\pico-drv8313 with foc\esp32_pico_d4_motor_driverV4.PcbDoc_2022-05-04.pcbdoc
+Date     : 2022/7/10
+Time     : 14:31:41
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: Bottom Layer-GND 1 In net GND On Bottom Layer
+   Polygon named: Top Layer-GND 1 In net GND On Top Layer
+   Polygon named: Bottom Layer-GND 1 In net GND On Bottom Layer
+   Polygon named: Top Layer-GND 1 In net GND On Top Layer
+
+Processing Rule : Clearance Constraint (Gap=5.6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+   Violation between Modified Polygon: Polygon Shelved  (Bottom Layer-GND 1) on Bottom Layer 
+   Violation between Modified Polygon: Polygon Shelved  (Top Layer-GND 1) on Top Layer 
+Rule Violations :2
+
+Processing Rule : Width Constraint (Min=10mil) (Max=50mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 2
+Waived Violations : 0
+Time Elapsed        : 00:00:00

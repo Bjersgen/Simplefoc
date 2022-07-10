@@ -16,7 +16,10 @@
                                 |——datasheet(ICs datasheets)
                                 |——image
                                 |——readme
+                        | ——pico-drv8313
+                        | ——pico-drv8313 with foc
                         | ——readme
+                        
 
 针对不同开发板实现的FOC算法，开发过程中需要注意datasheet的阅读
 

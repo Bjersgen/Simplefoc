@@ -1,0 +1,47 @@
+// AUTOMATICALLY GENERATED FILE. PLEASE DO NOT MODIFY IT MANUALLY
+//
+// PIO Unified Debugger
+//
+// Documentation: https://docs.platformio.org/page/plus/debugging.html
+// Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug",
+            "executable": "c:/Users/60105/Desktop/simplefoc/Simplefoc/Ctrl-FOC-Lite/2.Firmware/SimpleFOC_version/Ctrl-FOC-Lite-fw/.pio/build/genericSTM32F103CB/firmware.elf",
+            "projectEnvName": "genericSTM32F103CB",
+            "toolchainBinDir": "C:/Users/60105/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/60105/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug"
+            }
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "c:/Users/60105/Desktop/simplefoc/Simplefoc/Ctrl-FOC-Lite/2.Firmware/SimpleFOC_version/Ctrl-FOC-Lite-fw/.pio/build/genericSTM32F103CB/firmware.elf",
+            "projectEnvName": "genericSTM32F103CB",
+            "toolchainBinDir": "C:/Users/60105/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/60105/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd"
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (without uploading)",
+            "executable": "c:/Users/60105/Desktop/simplefoc/Simplefoc/Ctrl-FOC-Lite/2.Firmware/SimpleFOC_version/Ctrl-FOC-Lite-fw/.pio/build/genericSTM32F103CB/firmware.elf",
+            "projectEnvName": "genericSTM32F103CB",
+            "toolchainBinDir": "C:/Users/60105/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/60105/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
+            "loadMode": "manual"
+        }
+    ]
+}

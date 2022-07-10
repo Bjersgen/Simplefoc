@@ -3,7 +3,7 @@
 <title>Static Call Graph - [111\111.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image 111\111.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Apr 25 14:07:10 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue May 10 19:38:48 2022
 <BR><P>
 <H3>Maximum Stack Usage =        400 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -182,7 +182,7 @@ Global Symbols
 <P><STRONG><a name="[97]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h743xx.o(.text)
 </UL>
-<P><STRONG><a name="[15a]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[159]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[99]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -192,17 +192,17 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[15b]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[15a]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[15c]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[15b]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[15d]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[15c]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[15e]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+<P><STRONG><a name="[15d]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
 
-<P><STRONG><a name="[15f]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[15e]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
 
-<P><STRONG><a name="[160]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+<P><STRONG><a name="[15f]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32h743xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h743xx.o(RESET)
@@ -635,26 +635,26 @@ Global Symbols
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[161]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[160]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[d8]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Init
 </UL>
 
-<P><STRONG><a name="[162]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[161]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[9f]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[163]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[162]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[164]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[163]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[9e]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -665,7 +665,7 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_MspInit
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ETH_MspInit
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM1_Init
@@ -674,16 +674,16 @@ Global Symbols
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_ADC1_Init
 </UL>
 
-<P><STRONG><a name="[165]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[164]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[a0]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
-<P><STRONG><a name="[166]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<P><STRONG><a name="[165]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 
-<P><STRONG><a name="[13e]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[13d]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
 <P><STRONG><a name="[9d]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
@@ -693,7 +693,7 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[167]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[166]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[9c]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
@@ -701,9 +701,9 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[168]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[167]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
-<P><STRONG><a name="[169]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 48 bytes, iusefp.o(.text), UNUSED)
+<P><STRONG><a name="[168]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 48 bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[a1]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, dadd.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
@@ -713,7 +713,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
 <P><STRONG><a name="[a5]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
@@ -727,13 +727,13 @@ Global Symbols
 <P><STRONG><a name="[a7]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 48 bytes, dmul.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
 <P><STRONG><a name="[a8]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
 <P><STRONG><a name="[a9]"></a>_drem</STRONG> (Thumb, 134 bytes, Stack size 48 bytes, drem.o(.text))
@@ -741,18 +741,18 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
+<BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
 </UL>
 
 <P><STRONG><a name="[aa]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[13a]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<P><STRONG><a name="[139]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
 <P><STRONG><a name="[9a]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
@@ -761,13 +761,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[16a]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[169]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[a2]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[16b]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<P><STRONG><a name="[16a]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
 
 <P><STRONG><a name="[a4]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
@@ -835,12 +835,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_ADC1_Init
 </UL>
 
-<P><STRONG><a name="[141]"></a>HAL_ADC_GetState</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32h7xx_hal_adc.o(i.HAL_ADC_GetState))
-<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
+<P><STRONG><a name="[140]"></a>HAL_ADC_GetState</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32h7xx_hal_adc.o(i.HAL_ADC_GetState))
+<BR><BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
 </UL>
 
-<P><STRONG><a name="[142]"></a>HAL_ADC_GetValue</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32h7xx_hal_adc.o(i.HAL_ADC_GetValue))
-<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
+<P><STRONG><a name="[141]"></a>HAL_ADC_GetValue</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32h7xx_hal_adc.o(i.HAL_ADC_GetValue))
+<BR><BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
 </UL>
 
 <P><STRONG><a name="[bb]"></a>HAL_ADC_Init</STRONG> (Thumb, 496 bytes, Stack size 24 bytes, stm32h7xx_hal_adc.o(i.HAL_ADC_Init))
@@ -865,7 +865,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_ADC_REG_IsTriggerSourceSWStart
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
 </UL>
 
 <P><STRONG><a name="[bf]"></a>HAL_ADC_Start</STRONG> (Thumb, 242 bytes, Stack size 24 bytes, stm32h7xx_hal_adc.o(i.HAL_ADC_Start))
@@ -874,7 +874,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Enable
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_ADC_REG_IsConversionOngoing
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
 </UL>
 
 <P><STRONG><a name="[c0]"></a>HAL_Delay</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, stm32h7xx_hal.o(i.HAL_Delay))
@@ -919,7 +919,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[114]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32h7xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor_init
+<BR><BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor_init
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
 
@@ -986,7 +986,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Init
 </UL>
 
-<P><STRONG><a name="[123]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32h7xx_hal.o(i.HAL_IncTick))
+<P><STRONG><a name="[122]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32h7xx_hal.o(i.HAL_IncTick))
 <BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
@@ -1064,11 +1064,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[125]"></a>HAL_PWREx_EnableUSBVoltageDetector</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32h7xx_hal_pwr_ex.o(i.HAL_PWREx_EnableUSBVoltageDetector))
-<BR><BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<P><STRONG><a name="[124]"></a>HAL_PWREx_EnableUSBVoltageDetector</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32h7xx_hal_pwr_ex.o(i.HAL_PWREx_EnableUSBVoltageDetector))
+<BR><BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[df]"></a>HAL_RCCEx_GetD3PCLK1Freq</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, stm32h7xx_hal_rcc_ex.o(i.HAL_RCCEx_GetD3PCLK1Freq))
@@ -1118,7 +1118,7 @@ Global Symbols
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCCEx_PLL3_Config
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCCEx_PLL2_Config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[e6]"></a>HAL_RCC_ClockConfig</STRONG> (Thumb, 580 bytes, Stack size 40 bytes, stm32h7xx_hal_rcc.o(i.HAL_RCC_ClockConfig))
@@ -1128,7 +1128,7 @@ Global Symbols
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[ad]"></a>HAL_RCC_GetHCLKFreq</STRONG> (Thumb, 52 bytes, Stack size 12 bytes, stm32h7xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq))
@@ -1173,7 +1173,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetREVID
 </UL>
-<BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[c3]"></a>HAL_SYSCFG_ETHInterfaceSelect</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32h7xx_hal.o(i.HAL_SYSCFG_ETHInterfaceSelect))
@@ -1376,28 +1376,19 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Mem_Read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MagneticSensor_Init
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAngle
+<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAngle
 </UL>
 
-<P><STRONG><a name="[151]"></a>LPF_current_d</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lowpass_filter.o(i.LPF_current_d))
-<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<P><STRONG><a name="[150]"></a>LPF_current_d</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lowpass_filter.o(i.LPF_current_d))
+<BR><BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[14f]"></a>LPF_current_q</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lowpass_filter.o(i.LPF_current_q))
-<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<P><STRONG><a name="[14e]"></a>LPF_current_q</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lowpass_filter.o(i.LPF_current_q))
+<BR><BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[159]"></a>LPF_velocity</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lowpass_filter.o(i.LPF_velocity))
-<BR><BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftVelocity
-</UL>
-
-<P><STRONG><a name="[120]"></a>MagneticSensor_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, magneticsensor.o(i.MagneticSensor_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = MagneticSensor_Init &rArr; I2C_getRawCount &rArr; HAL_I2C_Mem_Read &rArr; I2C_RequestMemoryRead &rArr; I2C_WaitOnTXISFlagUntilTimeout &rArr; I2C_IsAcknowledgeFailed
-</UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_getRawCount
-</UL>
-<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[158]"></a>LPF_velocity</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, lowpass_filter.o(i.LPF_velocity))
+<BR><BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftVelocity
 </UL>
 
 <P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32h7xx_it.o(i.MemManage_Handler))
@@ -1407,11 +1398,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h743xx.o(RESET)
 </UL>
-<P><STRONG><a name="[121]"></a>Motor_init</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, bldcmotor.o(i.Motor_init))
+<P><STRONG><a name="[120]"></a>Motor_init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, bldcmotor.o(i.Motor_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Motor_init &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1419,24 +1410,24 @@ Global Symbols
 <P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32h7xx_it.o(i.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h743xx.o(RESET)
 </UL>
-<P><STRONG><a name="[156]"></a>PID_angle</STRONG> (Thumb, 158 bytes, Stack size 0 bytes, pid.o(i.PID_angle))
-<BR><BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
+<P><STRONG><a name="[155]"></a>PID_angle</STRONG> (Thumb, 158 bytes, Stack size 0 bytes, pid.o(i.PID_angle))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
 </UL>
 
-<P><STRONG><a name="[152]"></a>PID_current_d</STRONG> (Thumb, 292 bytes, Stack size 0 bytes, pid.o(i.PID_current_d))
-<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<P><STRONG><a name="[151]"></a>PID_current_d</STRONG> (Thumb, 292 bytes, Stack size 0 bytes, pid.o(i.PID_current_d))
+<BR><BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[150]"></a>PID_current_q</STRONG> (Thumb, 292 bytes, Stack size 0 bytes, pid.o(i.PID_current_q))
-<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<P><STRONG><a name="[14f]"></a>PID_current_q</STRONG> (Thumb, 292 bytes, Stack size 0 bytes, pid.o(i.PID_current_q))
+<BR><BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[153]"></a>PID_init</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, pid.o(i.PID_init))
+<P><STRONG><a name="[152]"></a>PID_init</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, pid.o(i.PID_init))
 <BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[157]"></a>PID_velocity</STRONG> (Thumb, 286 bytes, Stack size 0 bytes, pid.o(i.PID_velocity))
-<BR><BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
+<P><STRONG><a name="[156]"></a>PID_velocity</STRONG> (Thumb, 286 bytes, Stack size 0 bytes, pid.o(i.PID_velocity))
+<BR><BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
 </UL>
 
 <P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32h7xx_it.o(i.PendSV_Handler))
@@ -1446,17 +1437,17 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h743xx.o(RESET)
 </UL>
 <P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32h7xx_it.o(i.SysTick_Handler))
-<BR><BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
+<BR><BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h743xx.o(RESET)
 </UL>
-<P><STRONG><a name="[124]"></a>SystemClock_Config</STRONG> (Thumb, 168 bytes, Stack size 320 bytes, main.o(i.SystemClock_Config))
+<P><STRONG><a name="[123]"></a>SystemClock_Config</STRONG> (Thumb, 168 bytes, Stack size 320 bytes, main.o(i.SystemClock_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = SystemClock_Config &rArr; HAL_RCCEx_PeriphCLKConfig &rArr; RCCEx_PLL3_Config
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_EnableUSBVoltageDetector
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_EnableUSBVoltageDetector
 <LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ConfigSupply
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
@@ -1532,7 +1523,7 @@ Global Symbols
 <P><STRONG><a name="[d9]"></a>USB_CoreInit</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, stm32h7xx_ll_usb.o(i.USB_CoreInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USB_CoreInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CoreReset
+<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CoreReset
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Init
 </UL>
@@ -1548,8 +1539,8 @@ Global Symbols
 <P><STRONG><a name="[db]"></a>USB_DevInit</STRONG> (Thumb, 368 bytes, Stack size 36 bytes, stm32h7xx_ll_usb.o(i.USB_DevInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = USB_DevInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_FlushTxFifo
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_FlushRxFifo
+<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_FlushTxFifo
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_FlushRxFifo
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Init
 </UL>
@@ -1558,11 +1549,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Init
 </UL>
 
-<P><STRONG><a name="[128]"></a>USB_FlushRxFifo</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32h7xx_ll_usb.o(i.USB_FlushRxFifo))
+<P><STRONG><a name="[127]"></a>USB_FlushRxFifo</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32h7xx_ll_usb.o(i.USB_FlushRxFifo))
 <BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DevInit
 </UL>
 
-<P><STRONG><a name="[127]"></a>USB_FlushTxFifo</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, stm32h7xx_ll_usb.o(i.USB_FlushTxFifo))
+<P><STRONG><a name="[126]"></a>USB_FlushTxFifo</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, stm32h7xx_ll_usb.o(i.USB_FlushTxFifo))
 <BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_DevInit
 </UL>
 
@@ -1581,177 +1572,177 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32h743xx.o(RESET)
 </UL>
-<P><STRONG><a name="[129]"></a>__0printf</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[128]"></a>__0printf</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[16c]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[16b]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
-<P><STRONG><a name="[122]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
+<P><STRONG><a name="[121]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor_init
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor_init
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[16d]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[16c]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
-<P><STRONG><a name="[16e]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<P><STRONG><a name="[16d]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
-<P><STRONG><a name="[12d]"></a>__ARM_fpclassify</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, fpclassify.o(i.__ARM_fpclassify))
+<P><STRONG><a name="[12c]"></a>__ARM_fpclassify</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, fpclassify.o(i.__ARM_fpclassify))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_fpclassify
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
+<BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 </UL>
 
-<P><STRONG><a name="[12b]"></a>__hardfp_atan</STRONG> (Thumb, 402 bytes, Stack size 40 bytes, atan.o(i.__hardfp_atan))
+<P><STRONG><a name="[12a]"></a>__hardfp_atan</STRONG> (Thumb, 402 bytes, Stack size 40 bytes, atan.o(i.__hardfp_atan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = __hardfp_atan &rArr; __ARM_fpclassify
 </UL>
-<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassify
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_underflow
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
+<BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassify
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_underflow
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atan
+<BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atan
 </UL>
 
-<P><STRONG><a name="[131]"></a>__hardfp_atan2</STRONG> (Thumb, 392 bytes, Stack size 56 bytes, atan2.o(i.__hardfp_atan2))
+<P><STRONG><a name="[130]"></a>__hardfp_atan2</STRONG> (Thumb, 392 bytes, Stack size 56 bytes, atan2.o(i.__hardfp_atan2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = __hardfp_atan2 &rArr; atan &rArr; __hardfp_atan &rArr; __ARM_fpclassify
 </UL>
-<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan2
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atan
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan2
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atan
 </UL>
-<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
 </UL>
 
-<P><STRONG><a name="[135]"></a>__hardfp_fmod</STRONG> (Thumb, 246 bytes, Stack size 48 bytes, fmod.o(i.__hardfp_fmod))
+<P><STRONG><a name="[134]"></a>__hardfp_fmod</STRONG> (Thumb, 246 bytes, Stack size 48 bytes, fmod.o(i.__hardfp_fmod))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_drem
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
+<BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
 </UL>
 
-<P><STRONG><a name="[130]"></a>__kernel_poly</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, poly.o(i.__kernel_poly))
-<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
+<P><STRONG><a name="[12f]"></a>__kernel_poly</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, poly.o(i.__kernel_poly))
+<BR><BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 </UL>
 
-<P><STRONG><a name="[12c]"></a>__mathlib_dbl_infnan</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_infnan))
-<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
+<P><STRONG><a name="[12b]"></a>__mathlib_dbl_infnan</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_infnan))
+<BR><BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 </UL>
 
-<P><STRONG><a name="[132]"></a>__mathlib_dbl_infnan2</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_infnan2))
-<BR><BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
+<P><STRONG><a name="[131]"></a>__mathlib_dbl_infnan2</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_infnan2))
+<BR><BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
 </UL>
 
-<P><STRONG><a name="[136]"></a>__mathlib_dbl_invalid</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_invalid))
-<BR><BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
+<P><STRONG><a name="[135]"></a>__mathlib_dbl_invalid</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_invalid))
+<BR><BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
 </UL>
 
-<P><STRONG><a name="[12e]"></a>__mathlib_dbl_underflow</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_underflow))
-<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
+<P><STRONG><a name="[12d]"></a>__mathlib_dbl_underflow</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dunder.o(i.__mathlib_dbl_underflow))
+<BR><BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 </UL>
 
-<P><STRONG><a name="[16f]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[16e]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[170]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[16f]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[171]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[170]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[134]"></a>__set_errno</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, errno.o(i.__set_errno))
-<BR><BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
+<P><STRONG><a name="[133]"></a>__set_errno</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, errno.o(i.__set_errno))
+<BR><BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
 </UL>
 
-<P><STRONG><a name="[137]"></a>_cos</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, foc_utils.o(i._cos))
-<BR><BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
+<P><STRONG><a name="[136]"></a>_cos</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, foc_utils.o(i._cos))
+<BR><BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
-</UL>
-
-<P><STRONG><a name="[144]"></a>_electricalAngle</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, foc_utils.o(i._electricalAngle))
-<BR><BR>[Called By]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;angleOpenloop
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
 </UL>
 
-<P><STRONG><a name="[13b]"></a>_normalizeAngle</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, foc_utils.o(i._normalizeAngle))
+<P><STRONG><a name="[143]"></a>_electricalAngle</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, foc_utils.o(i._electricalAngle))
+<BR><BR>[Called By]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;angleOpenloop
+</UL>
+
+<P><STRONG><a name="[13a]"></a>_normalizeAngle</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, foc_utils.o(i._normalizeAngle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = _normalizeAngle &rArr; __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
+<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;electricalAngle
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;electricalAngle
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
 </UL>
 
-<P><STRONG><a name="[13f]"></a>_readADCVoltage</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, adc.o(i._readADCVoltage))
+<P><STRONG><a name="[13e]"></a>_readADCVoltage</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, adc.o(i._readADCVoltage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = _readADCVoltage &rArr; analogRead &rArr; HAL_ADC_Start &rArr; ADC_Enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
+<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;analogRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getPhaseCurrents
-</UL>
-
-<P><STRONG><a name="[138]"></a>_sin</STRONG> (Thumb, 268 bytes, Stack size 0 bytes, foc_utils.o(i._sin))
-<BR><BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cos
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getPhaseCurrents
 </UL>
 
-<P><STRONG><a name="[14a]"></a>_sqrtApprox</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, foc_utils.o(i._sqrtApprox))
-<BR><BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+<P><STRONG><a name="[137]"></a>_sin</STRONG> (Thumb, 268 bytes, Stack size 0 bytes, foc_utils.o(i._sin))
+<BR><BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cos
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
 </UL>
 
-<P><STRONG><a name="[140]"></a>analogRead</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, adc.o(i.analogRead))
+<P><STRONG><a name="[149]"></a>_sqrtApprox</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, foc_utils.o(i._sqrtApprox))
+<BR><BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+</UL>
+
+<P><STRONG><a name="[13f]"></a>analogRead</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, adc.o(i.analogRead))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = analogRead &rArr; HAL_ADC_Start &rArr; ADC_Enable
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_Start
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_PollForConversion
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_GetValue
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_GetState
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_GetValue
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_GetState
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_readADCVoltage
+<BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_readADCVoltage
 </UL>
 
-<P><STRONG><a name="[143]"></a>angleOpenloop</STRONG> (Thumb, 220 bytes, Stack size 16 bytes, bldcmotor.o(i.angleOpenloop))
+<P><STRONG><a name="[142]"></a>angleOpenloop</STRONG> (Thumb, 220 bytes, Stack size 16 bytes, bldcmotor.o(i.angleOpenloop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = angleOpenloop &rArr; setPhaseVoltage &rArr; _normalizeAngle &rArr; __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_electricalAngle
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+<BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_electricalAngle
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
 </UL>
 
-<P><STRONG><a name="[133]"></a>atan</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, atan.o(i.atan))
+<P><STRONG><a name="[132]"></a>atan</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, atan.o(i.atan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = atan &rArr; __hardfp_atan &rArr; __ARM_fpclassify
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
+<BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 </UL>
-<BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
+<BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
 </UL>
 
-<P><STRONG><a name="[146]"></a>electricalAngle</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, focmotor.o(i.electricalAngle))
+<P><STRONG><a name="[145]"></a>electricalAngle</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, focmotor.o(i.electricalAngle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = electricalAngle &rArr; _normalizeAngle &rArr; __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
+<BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[12f]"></a>fabs</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, fabs.o(i.fabs))
+<P><STRONG><a name="[12e]"></a>fabs</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, fabs.o(i.fabs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = fabs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
-<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
+<BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 </UL>
 
 <P><STRONG><a name="[98]"></a>fputc</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, usart.o(i.fputc))
@@ -1761,82 +1752,81 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
 </UL>
-<P><STRONG><a name="[147]"></a>getAngle</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, magneticsensor.o(i.getAngle))
+<P><STRONG><a name="[146]"></a>getAngle</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, magneticsensor.o(i.getAngle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = getAngle &rArr; I2C_getRawCount &rArr; HAL_I2C_Mem_Read &rArr; I2C_RequestMemoryRead &rArr; I2C_WaitOnTXISFlagUntilTimeout &rArr; I2C_IsAcknowledgeFailed
 </UL>
 <BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_getRawCount
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getVelocity
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftAngle
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getVelocity
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftAngle
 </UL>
 
-<P><STRONG><a name="[148]"></a>getDCCurrent</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, currentsense.o(i.getDCCurrent))
+<P><STRONG><a name="[147]"></a>getDCCurrent</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, currentsense.o(i.getDCCurrent))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = getDCCurrent &rArr; getPhaseCurrents &rArr; _readADCVoltage &rArr; analogRead &rArr; HAL_ADC_Start &rArr; ADC_Enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getPhaseCurrents
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cos
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sqrtApprox
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getPhaseCurrents
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cos
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sqrtApprox
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[14b]"></a>getFOCCurrents</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, currentsense.o(i.getFOCCurrents))
+<P><STRONG><a name="[14a]"></a>getFOCCurrents</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, currentsense.o(i.getFOCCurrents))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = getFOCCurrents &rArr; getPhaseCurrents &rArr; _readADCVoltage &rArr; analogRead &rArr; HAL_ADC_Start &rArr; ADC_Enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getPhaseCurrents
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cos
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getPhaseCurrents
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cos
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[149]"></a>getPhaseCurrents</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, inlinecurrentsense.o(i.getPhaseCurrents))
+<P><STRONG><a name="[148]"></a>getPhaseCurrents</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, inlinecurrentsense.o(i.getPhaseCurrents))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = getPhaseCurrents &rArr; _readADCVoltage &rArr; analogRead &rArr; HAL_ADC_Start &rArr; ADC_Enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_readADCVoltage
+<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_readADCVoltage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
 </UL>
 
-<P><STRONG><a name="[14c]"></a>getVelocity</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, magneticsensor.o(i.getVelocity))
+<P><STRONG><a name="[14b]"></a>getVelocity</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, magneticsensor.o(i.getVelocity))
 <BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = getVelocity &rArr; getAngle &rArr; I2C_getRawCount &rArr; HAL_I2C_Mem_Read &rArr; I2C_RequestMemoryRead &rArr; I2C_WaitOnTXISFlagUntilTimeout &rArr; I2C_IsAcknowledgeFailed
 </UL>
-<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAngle
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAngle
 </UL>
-<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftVelocity
+<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftVelocity
 </UL>
 
-<P><STRONG><a name="[14d]"></a>loopFOC</STRONG> (Thumb, 206 bytes, Stack size 24 bytes, bldcmotor.o(i.loopFOC))
+<P><STRONG><a name="[14c]"></a>loopFOC</STRONG> (Thumb, 206 bytes, Stack size 24 bytes, bldcmotor.o(i.loopFOC))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = loopFOC &rArr; setPhaseVoltage &rArr; _normalizeAngle &rArr; __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftAngle
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;electricalAngle
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_current_q
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_current_d
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPF_current_q
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPF_current_d
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftAngle
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFOCCurrents
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getDCCurrent
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;electricalAngle
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_current_q
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_current_d
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPF_current_q
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPF_current_d
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>main</STRONG> (Thumb, 170 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[95]"></a>main</STRONG> (Thumb, 166 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = main &rArr; SystemClock_Config &rArr; HAL_RCCEx_PeriphCLKConfig &rArr; RCCEx_PLL3_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_init
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor_init
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MagneticSensor_Init
+<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_init
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor_init
 <LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 <LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_OTG_FS_PCD_Init
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART3_UART_Init
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
@@ -1846,60 +1836,60 @@ Global Symbols
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_ETH_Init
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_ADC1_Init
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[154]"></a>move</STRONG> (Thumb, 234 bytes, Stack size 32 bytes, bldcmotor.o(i.move))
+<P><STRONG><a name="[153]"></a>move</STRONG> (Thumb, 234 bytes, Stack size 32 bytes, bldcmotor.o(i.move))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = move &rArr; velocityOpenloop &rArr; setPhaseVoltage &rArr; _normalizeAngle &rArr; __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftVelocity
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_velocity
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_angle
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;angleOpenloop
+<BR>[Calls]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shaftVelocity
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_velocity
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_angle
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;angleOpenloop
 </UL>
 <BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[145]"></a>setPhaseVoltage</STRONG> (Thumb, 520 bytes, Stack size 56 bytes, bldcmotor.o(i.setPhaseVoltage))
+<P><STRONG><a name="[144]"></a>setPhaseVoltage</STRONG> (Thumb, 520 bytes, Stack size 56 bytes, bldcmotor.o(i.setPhaseVoltage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = setPhaseVoltage &rArr; _normalizeAngle &rArr; __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sqrtApprox
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
+<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sqrtApprox
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sin
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;angleOpenloop
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;velocityOpenloop
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;angleOpenloop
 </UL>
 
-<P><STRONG><a name="[14e]"></a>shaftAngle</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, focmotor.o(i.shaftAngle))
+<P><STRONG><a name="[14d]"></a>shaftAngle</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, focmotor.o(i.shaftAngle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = shaftAngle &rArr; getAngle &rArr; I2C_getRawCount &rArr; HAL_I2C_Mem_Read &rArr; I2C_RequestMemoryRead &rArr; I2C_WaitOnTXISFlagUntilTimeout &rArr; I2C_IsAcknowledgeFailed
 </UL>
-<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAngle
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAngle
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopFOC
 </UL>
 
-<P><STRONG><a name="[155]"></a>shaftVelocity</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, focmotor.o(i.shaftVelocity))
+<P><STRONG><a name="[154]"></a>shaftVelocity</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, focmotor.o(i.shaftVelocity))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = shaftVelocity &rArr; getVelocity &rArr; getAngle &rArr; I2C_getRawCount &rArr; HAL_I2C_Mem_Read &rArr; I2C_RequestMemoryRead &rArr; I2C_WaitOnTXISFlagUntilTimeout &rArr; I2C_IsAcknowledgeFailed
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getVelocity
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPF_velocity
+<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getVelocity
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPF_velocity
 </UL>
-<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
 </UL>
 
-<P><STRONG><a name="[158]"></a>velocityOpenloop</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, bldcmotor.o(i.velocityOpenloop))
+<P><STRONG><a name="[157]"></a>velocityOpenloop</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, bldcmotor.o(i.velocityOpenloop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = velocityOpenloop &rArr; setPhaseVoltage &rArr; _normalizeAngle &rArr; __hardfp_fmod &rArr; _drem &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_electricalAngle
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
+<BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_normalizeAngle
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_electricalAngle
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setPhaseVoltage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
+<BR>[Called By]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move
 </UL>
 <P>
 <H3>
@@ -2087,7 +2077,7 @@ Local Symbols
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_SetRxFifoThreshold
 </UL>
 
-<P><STRONG><a name="[126]"></a>USB_CoreReset</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, stm32h7xx_ll_usb.o(i.USB_CoreReset))
+<P><STRONG><a name="[125]"></a>USB_CoreReset</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, stm32h7xx_ll_usb.o(i.USB_CoreReset))
 <BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_CoreInit
 </UL>
 
@@ -2190,33 +2180,33 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADCEx_MultiModeConfigChannel
 </UL>
 
-<P><STRONG><a name="[139]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
+<P><STRONG><a name="[138]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[12a]"></a>_printf_core</STRONG> (Thumb, 1704 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<P><STRONG><a name="[129]"></a>_printf_core</STRONG> (Thumb, 1704 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf
 </UL>
 
-<P><STRONG><a name="[13d]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printfa.o(i._printf_post_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[13c]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[13c]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printfa.o(i._printf_pre_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[13b]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 <P>
 <H3>
