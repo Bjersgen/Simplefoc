@@ -2,7 +2,7 @@
 #include <SimpleFOC.h>
 #include "Wire.h"
 //设置I2C设备地址，每个电机设置一个地址
-#define I2C_DEV_ADDR 0x31
+#define I2C_DEV_ADDR 0x30
 //电机转速
 String target_velocity_string;
 int target_velocity = 0;

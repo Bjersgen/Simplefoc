@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetD1_A Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D1-2
+Removed Pin From Net: NetName=NetD2_A Pin=D2-1
+Removed Pin From Net: NetName=GND Pin=D2-2
+Removed Pin From Net: NetName=GPIO2 Pin=INA1-8
+Removed Pin From Net: NetName=GPIO4 Pin=INA2-8
+Added Pin To Net: NetName=GPIO4 Pin=INA1-8
+Added Pin To Net: NetName=GPIO2 Pin=INA2-8
+Added Member To Class: ClassName=esp32_pico_d4_motor_driver.SchDoc_2022-05-04 (1) Member=Component CBY1 0.1¦ÌF

@@ -222,7 +222,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GKDUVWEM
 
 [Document12]
 DocumentPath=..\simplefoc\Simplefoc\STM32H7_FOC\circle\library\esp32(1).SchLib
@@ -239,7 +239,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LBNHIGYQ
+DocumentUniqueId=ZKNDJVLW
 
 [Document13]
 DocumentPath=..\simplefoc\Simplefoc\STM32H7_FOC\circle\library\esp32.PcbLib
@@ -256,7 +256,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GKDUVWEM
 
 [Document14]
 DocumentPath=..\simplefoc\Simplefoc\STM32H7_FOC\circle\library\esp32.SchLib
@@ -273,7 +273,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ZKNDJVLW
+DocumentUniqueId=VRQYOVBE
 
 [Document15]
 DocumentPath=..\simplefoc\Simplefoc\STM32H7_FOC\circle\library\key.SCHLIB
@@ -307,7 +307,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QIEOYBCC
 
 [Document17]
 DocumentPath=..\simplefoc\Simplefoc\STM32H7_FOC\circle\library\Main_Board.PcbLib
@@ -324,7 +324,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NIBSEVYB
 
 [Document18]
 DocumentPath=..\simplefoc\Simplefoc\STM32H7_FOC\circle\library\MB1137.PcbLib
@@ -530,7 +530,79 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DPEMIOHU
 
+[Document30]
+DocumentPath=new.pcbdoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VMRFACCT
+
+[Document31]
+DocumentPath=SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PRVFDYTL
+
+[Document32]
+DocumentPath=HTSSOP-28_L9.8-W4.5-P0.65-LS6.6-BL-EP.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MEJESMXY
+
+[Document33]
+DocumentPath=4.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=CQADPALM
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for pico\Design Rule Check - 4.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
 DocumentPath=Project Outputs for pico\Design Rule Check - esp32_pico_d4_motor_driverV4.html
 DItemRevisionGUID=
 

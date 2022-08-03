@@ -9,11 +9,11 @@ int target_velocity = 0;
 //主机请求回复
 void onRequest(){
   Wire1.print(target_velocity);
-  Serial.println("HaveRequest");
+  //Serial.println("HaveRequest");
 }
 //收包中断，收到速度修改电机转动速度
 void onReceive(int len){
-  Serial.printf("Receive[%d]: ", len);
+  //Serial.printf("Receive[%d]: ", len);
   while(Wire1.available()){
     target_velocity_string = Wire1.read();
     target_velocity = target_velocity_string.toInt();
@@ -23,7 +23,7 @@ void onReceive(int len){
 //编码器采用I2C通信
 MagneticSensorI2C sensor = MagneticSensorI2C(AS5600_I2C);
 //电机极对数
-BLDCMotor motor = BLDCMotor(7);
+BLDCMotor motor = BLDCMotor(8);
 // BLDCDriver3PWM driver = BLDCDriver3PWM(pwmA, pwmB, pwmC, Enable(optional));
 BLDCDriver3PWM driver = BLDCDriver3PWM(19, 21, 22, 23);
 
@@ -45,21 +45,23 @@ void setup() {
   sensor.init();
   motor.linkSensor(&sensor);
   //供电电压
-  driver.voltage_power_supply = 12;
+  driver.voltage_power_supply = 16.8;
   driver.init();
   motor.linkDriver(&driver);
+  motor.voltage_limit = 3;   // [V]
+  motor.velocity_limit = 5; // [rad/s] cca 50rpm
   motor.controller = MotionControlType::velocity;
   //PID参数
   motor.PID_velocity.P = 0.1;
   motor.PID_velocity.I = 2;
   motor.PID_velocity.D = 0;
-  //电压限制
-  motor.voltage_limit = 12;
   motor.PID_velocity.output_ramp = 1000;
   motor.LPF_velocity.Tf = 0.01;
   motor.init();
   motor.initFOC();
+  motor.monitor_variables = _MON_ANGLE; // default _MON_TARGET | _MON_VOLT_Q | _MON_VEL | _MON_ANGLE
   _delay(1000);
+
   // #if CONFIG_IDF_TARGET_ESP32
   // char message[64];
   // snprintf(message, 64, "%u Packets.", target_velocity);
@@ -72,6 +74,13 @@ void loop() {
   //闭环速度控制
   motor.loopFOC();
   motor.move(target_velocity);
-  Serial.println(target_velocity);
+  if(sensor.getVelocity()>3){
+    motor.voltage_limit = 16.5;
+  }
+  // Serial.println(target_velocity);
+  //motor.monitor();
+  // Serial.print(sensor.getAngle());
+  // Serial.print("\t");
+  // Serial.println(sensor.getVelocity());
   
 }
