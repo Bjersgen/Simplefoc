@@ -29,8 +29,6 @@ Most projects are based on Arduino, and one project is based on stm32h743.
 # FOC document 2021.12.15
 Product：
 
-![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/18.png)
-![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/19.png)
 
 ## 目录
 
