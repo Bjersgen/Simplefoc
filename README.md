@@ -27,7 +27,6 @@ Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
 Most projects are based on Arduino, and one project is based on stm32h743.
 
 # FOC document 2021.12.15
-Product：
 
 
 ## 目录
