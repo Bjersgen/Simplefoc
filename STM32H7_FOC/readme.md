@@ -1,5 +1,6 @@
 2021.12.06
-
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/18.png)
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/19.png)
 基于STM32CubeMX的HAL库开发的代码，目前只进行过开环测试
 
 circle是基于STM32H743开发的一体化伺服系统，包括主控芯片（STM32H743）、驱动芯片、电流采样、编码器等等，对外保留了SPI接口、12-24V的供电口
