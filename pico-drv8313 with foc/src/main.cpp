@@ -2,7 +2,7 @@
 #include <SimpleFOC.h>
 #include "Wire.h"
 //设置I2C设备地址，每个电机设置一个地址
-#define I2C_DEV_ADDR 0x31
+#define I2C_DEV_ADDR 0x29
 //电机转速
 String target_velocity_string;
 int target_velocity = 0;
@@ -74,6 +74,7 @@ void loop() {
   //闭环速度控制
   motor.loopFOC();
   motor.move(target_velocity);
+  
   if(sensor.getVelocity()>3){
     motor.voltage_limit = 16.5;
   }

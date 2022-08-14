@@ -123,23 +123,6 @@ GenerateClassCluster=0
 DocumentUniqueId=DPEMIOHU
 
 [Document6]
-DocumentPath=new.pcbdoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=VMRFACCT
-
-[Document7]
 DocumentPath=SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PRVFDYTL
 
-[Document8]
+[Document7]
 DocumentPath=HTSSOP-28_L9.8-W4.5-P0.65-LS6.6-BL-EP.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MEJESMXY
 
-[Document9]
+[Document8]
 DocumentPath=4.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
