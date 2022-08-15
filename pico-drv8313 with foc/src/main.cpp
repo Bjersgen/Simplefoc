@@ -17,6 +17,7 @@ void onReceive(int len){
   while(Wire1.available()){
     target_velocity_string = Wire1.read();
     target_velocity = target_velocity_string.toInt();
+    if(target_velocity>=128) target_velocity = target_velocity - 256;
   }
 }
 
@@ -49,7 +50,6 @@ void setup() {
   driver.init();
   motor.linkDriver(&driver);
   motor.voltage_limit = 3;   // [V]
-  motor.velocity_limit = 5; // [rad/s] cca 50rpm
   motor.controller = MotionControlType::velocity;
   //PID参数
   motor.PID_velocity.P = 0.1;
@@ -79,9 +79,9 @@ void loop() {
     motor.voltage_limit = 16.5;
   }
   // Serial.println(target_velocity);
-  //motor.monitor();
-  // Serial.print(sensor.getAngle());
-  // Serial.print("\t");
-  // Serial.println(sensor.getVelocity());
+  // motor.monitor();
+  Serial.print(sensor.getAngle());
+  Serial.print("\t");
+  Serial.println(sensor.getVelocity());
   
 }
