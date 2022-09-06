@@ -1,3 +1,8 @@
+Output for 72W motor control:
+
+![result](https://github.com/Bjersgen/Simplefoc/blob/main/pico-drv8313%20with%20foc/docs/result.jpg)
+
+
 
 This directory is intended for PlatformIO Unit Testing and project tests.
 
