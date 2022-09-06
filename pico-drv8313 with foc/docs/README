@@ -1,4 +1,6 @@
+Output for 72W motor control:
 
+![](https://github.com/Bjersgen/Simplefoc/blob/main/STM32H7_FOC/image/7.png)
 This directory is intended for PlatformIO Unit Testing and project tests.
 
 Unit Testing is a software testing method by which individual units of
