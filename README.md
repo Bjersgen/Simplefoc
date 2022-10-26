@@ -1,6 +1,7 @@
 # Simplefoc
 Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
 
+<<<<<<< HEAD
        SimpleFOC——
                         | ——BLDCmotor(self made DIY motor)
                         | ——Documents
@@ -20,6 +21,44 @@ Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
                         | ——pico-drv8313 with foc
                         | ——readme
 
+=======
+   SimpleFOC——
+                    | ——BLDCmotor(self made DIY motor)
+		    
+                    | ——Documents
+		    
+                    | ——STM32H7_FOC
+		    
+                    	|——circle(PCBs & libraries)
+			
+                    		|——Shell(a PCB shell)
+				
+                            |——code(using Keil5 & STM32CubeMX)
+			    
+                    		|——Inc
+				
+                    		|——Src
+				
+                    		|——Drivers
+				
+                    		|——MDK-ARM
+				
+                            |——datasheet(ICs datasheets)
+			    
+                            |——image
+			    
+                            |——readme
+			    
+	            | ——pico(how to use pico)
+	  
+                    | ——pico-drv8313
+		    
+                    | ——pico-drv8313 with foc
+		    
+                    | ——readme
+		    
+                        
+>>>>>>> 2776cbaa513a7976336359543c34e24317f3ea34
 
 
 Most projects are based on Arduino, and one project is based on stm32h743.
