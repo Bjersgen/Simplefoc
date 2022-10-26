@@ -3,13 +3,21 @@ Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
 
    SimpleFOC——
                     | ——BLDCmotor(self made DIY motor)
+		    
                     | ——Documents
+		    
                     | ——STM32H7_FOC
+		    
                     	|——circle(PCBs & libraries)
+			
                     		|——Shell(a PCB shell)
+				
                             |——code(using Keil5 & STM32CubeMX)
+			    
                     		|——Inc
+				
                     		|——Src
+				
                     		|——Drivers
                     		|——MDK-ARM
                             |——datasheet(ICs datasheets)
