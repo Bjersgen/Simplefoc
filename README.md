@@ -1,67 +1,30 @@
 # Simplefoc
 Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
 
-<<<<<<< HEAD
-       SimpleFOC——
-                        | ——BLDCmotor(self made DIY motor)
-                        | ——Documents
-                        | ——STM32H7_FOC
-                        	|——circle(PCBs & libraries)
-                        		|——Shell(a PCB shell)
-                                |——code(using Keil5 & STM32CubeMX)
-                        		|——Inc
-                        		|——Src
-                        		|——Drivers
-                        		|——MDK-ARM
-                                |——datasheet(ICs datasheets)
-                                |——image
-                                |——readme
-                        | ——pico(how to use)                 
-                        | ——pico-drv8313
-                        | ——pico-drv8313 with foc
-                        | ——readme
-
-=======
-   SimpleFOC——
-                    | ——BLDCmotor(self made DIY motor)
-		    
-                    | ——Documents
-		    
-                    | ——STM32H7_FOC
-		    
-                    	|——circle(PCBs & libraries)
-			
-                    		|——Shell(a PCB shell)
-				
-                            |——code(using Keil5 & STM32CubeMX)
-			    
-                    		|——Inc
-				
-                    		|——Src
-				
-                    		|——Drivers
-				
-                    		|——MDK-ARM
-				
-                            |——datasheet(ICs datasheets)
-			    
-                            |——image
-			    
-                            |——readme
-			    
-	            | ——pico(how to use pico)
-	  
-                    | ——pico-drv8313
-		    
-                    | ——pico-drv8313 with foc
-		    
-                    | ——readme
-		    
-                        
->>>>>>> 2776cbaa513a7976336359543c34e24317f3ea34
+           SimpleFOC——
+                            | ——BLDCmotor(self made DIY motor)
+                            | ——Documents
+                            | ——STM32H7_FOC
+                                 |——circle(PCBs & libraries)
+                            		  |——Shell(a PCB shell)
+                                 |——code(using Keil5 & STM32CubeMX)
+                            		  |——Inc
+                            		  |——Src
+                            		  |——Drivers
+                            		  |——MDK-ARM
+                                 |——datasheet(ICs datasheets)
+                                 |——image
+                                 |——readme
+                            | ——pico(how to use)                 
+                            | ——pico-drv8313
+                            | ——pico-drv8313 with foc
+                            | ——readme
 
 
-Most projects are based on Arduino, and one project is based on stm32h743.
+​                        
+
+
+Most projects are based on Arduino, esp32-pico D4 and one project is based on stm32h743.
 
 # FOC document 2021.12.15
 
