@@ -15,10 +15,11 @@ Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
                                 |——datasheet(ICs datasheets)
                                 |——image
                                 |——readme
+                        | ——pico(how to use)                 
                         | ——pico-drv8313
                         | ——pico-drv8313 with foc
                         | ——readme
-                        
+
 
 
 Most projects are based on Arduino, and one project is based on stm32h743.
