@@ -3,10 +3,7 @@ Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
 
        SimpleFOC——
                         | ——BLDCmotor(self made DIY motor)
-                        | ——Ctrl-FOC-Lite(a copy from zhihui)
                         | ——Documents
-                        | ——esp32-L6234_foc
-                        | ——SimpleFOCShield-L6234_foc
                         | ——STM32H7_FOC
                         	|——circle(PCBs & libraries)
                         		|——Shell(a PCB shell)
