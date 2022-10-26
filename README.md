@@ -15,6 +15,7 @@ Feature——MAX_120W(24V*5A)——Faster(1KHZ for closed loop)
                                 |——datasheet(ICs datasheets)
                                 |——image
                                 |——readme
+			| ——pico(how to use pico)
                         | ——pico-drv8313
                         | ——pico-drv8313 with foc
                         | ——readme
