@@ -6,6 +6,7 @@ Firstly, there are some facts that need to be clarified, which I was not aware o
 2、Do not use I2C communication for the AS5600 encoder as it is slow to trigger and has a delay, and the communication frequency has a great impact on the main loop of FOC.
 
 3、Esp32 or Arduino itself does not have powerful features such as interrupts and DMA like stm32, and adding these functions to the underlying code of SimpleFOC is also difficult.
+
 To address the issue of FOC being unable to run at high speeds, the following improvement solutions are recommended:
 
 1、Change the encoder to AS5047 and use SPI or PWM, paying attention to signal integrity.
